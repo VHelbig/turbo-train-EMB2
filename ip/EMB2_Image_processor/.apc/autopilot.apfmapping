@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="main.cpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/ip/main.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main_test_bench.cpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/ip/main_test_bench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

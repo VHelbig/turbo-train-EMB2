@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'image_processing'
+================================================================
++ General Information: 
+    * Date:           Wed Oct 23 16:38:29 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        EMB2_Image_processor
+    * Solution:       Image_Processor (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |       Modules      |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |    |           |           |     |
+    |       & Loops      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |+ image_processing  |  Timing|   0.00|     3014|  3.014e+04|         -|     3015|     -|        no|  2 (~0%)|   -|  873 (~0%)|  1058 (1%)|    -|
+    | o VITIS_LOOP_12_1  |       -|  -7.30|     3001|  3.001e+04|         3|        1|  3000|       yes|        -|   -|          -|          -|    -|
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+
