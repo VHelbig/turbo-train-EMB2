@@ -19,7 +19,7 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>com.xilinx.sdx.system.core.embedded</nature>
+		<nature>com.xilinx.sdx.system.core.unified</nature>
 		<nature>com.xilinx.sdx.system.systemprojectnature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>

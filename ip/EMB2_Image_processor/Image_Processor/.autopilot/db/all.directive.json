@@ -1,6 +1,7 @@
 {"sourceFile": [{
       "name": "",
-      "directive": [{
+      "directive": [
+        {
           "functionName": "image_processing",
           "label": "",
           "functionLabel": "",
@@ -11,5 +12,18 @@
                 "value": "image_processing"
               }]
           }
-        }]
+        },
+        {
+          "functionName": "image_processing",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "image_processing"
+              }]
+          }
+        }
+      ]
     }]}

@@ -80,11 +80,25 @@ int XImage_processing_Initialize(XImage_processing *InstancePtr, const char* Ins
 int XImage_processing_Release(XImage_processing *InstancePtr);
 #endif
 
+void XImage_processing_Start(XImage_processing *InstancePtr);
+u32 XImage_processing_IsDone(XImage_processing *InstancePtr);
+u32 XImage_processing_IsIdle(XImage_processing *InstancePtr);
+u32 XImage_processing_IsReady(XImage_processing *InstancePtr);
+void XImage_processing_EnableAutoRestart(XImage_processing *InstancePtr);
+void XImage_processing_DisableAutoRestart(XImage_processing *InstancePtr);
 
 void XImage_processing_Set_in_r(XImage_processing *InstancePtr, u64 Data);
 u64 XImage_processing_Get_in_r(XImage_processing *InstancePtr);
 void XImage_processing_Set_out_r(XImage_processing *InstancePtr, u64 Data);
 u64 XImage_processing_Get_out_r(XImage_processing *InstancePtr);
+
+void XImage_processing_InterruptGlobalEnable(XImage_processing *InstancePtr);
+void XImage_processing_InterruptGlobalDisable(XImage_processing *InstancePtr);
+void XImage_processing_InterruptEnable(XImage_processing *InstancePtr, u32 Mask);
+void XImage_processing_InterruptDisable(XImage_processing *InstancePtr, u32 Mask);
+void XImage_processing_InterruptClear(XImage_processing *InstancePtr, u32 Mask);
+u32 XImage_processing_InterruptGetEnabled(XImage_processing *InstancePtr);
+u32 XImage_processing_InterruptGetStatus(XImage_processing *InstancePtr);
 
 #ifdef __cplusplus
 }

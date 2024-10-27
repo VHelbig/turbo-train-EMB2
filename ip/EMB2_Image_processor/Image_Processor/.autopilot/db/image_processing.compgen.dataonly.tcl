@@ -18,6 +18,10 @@ out_r {
 	offset 28
 	offset_end 39
 }
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
 }
 dict set axilite_register_dict control $port_control
 

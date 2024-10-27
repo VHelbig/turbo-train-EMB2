@@ -3,9 +3,9 @@
     	
     <storageModule moduleId="org.eclipse.cdt.core.settings">
         		
-        <cconfiguration id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470547359">
+        <cconfiguration id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.206378441">
             			
-            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470547359" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.206378441" moduleId="org.eclipse.cdt.core.settings" name="Emulation-SW">
                 				
                 <externalSettings/>
                 				
@@ -21,17 +21,17 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470547359" name="Debug" parent="com.xilinx.sdx.system.managedbuilder.debugConfiguration">
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.206378441" name="Emulation-SW" parent="com.xilinx.sdx.system.managedbuilder.swemu.configuration">
                     					
-                    <folderInfo id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470547359." name="/" resourcePath="">
+                    <folderInfo id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.206378441." name="/" resourcePath="">
                         						
-                        <toolChain id="com.xilinx.sdx.system.managedbuilder.debug.toolChain.326607527" name="System Toolchain" superClass="com.xilinx.sdx.system.managedbuilder.debug.toolChain">
+                        <toolChain id="com.xilinx.sdx.system.managedbuilder.sw_emu.558089526" name="System Toolchain" superClass="com.xilinx.sdx.system.managedbuilder.sw_emu">
                             							
-                            <targetPlatform id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470547359..1510549505" name=""/>
+                            <targetPlatform id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.206378441..1447631180" name=""/>
                             							
-                            <builder buildPath="${workspace_loc:/interface_test_cpu_system}/Debug" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1979686397" managedBuildOn="true" name="System Project Builder.Debug" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
+                            <builder buildPath="${workspace_loc:/interface_test_cpu_system}/Emulation-SW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1625312071" managedBuildOn="true" name="System Project Builder.Emulation-SW" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
                             							
-                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1720415730" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
+                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.523220691" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
                             						
                         </toolChain>
                         					
@@ -45,9 +45,9 @@
             		
         </cconfiguration>
         		
-        <cconfiguration id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.485366727">
+        <cconfiguration id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1340438310">
             			
-            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.485366727" moduleId="org.eclipse.cdt.core.settings" name="Release">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1340438310" moduleId="org.eclipse.cdt.core.settings" name="Emulation-HW">
                 				
                 <externalSettings/>
                 				
@@ -63,17 +63,59 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.485366727" name="Release" parent="com.xilinx.sdx.system.managedbuilder.releaseConfiguration">
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1340438310" name="Emulation-HW" parent="com.xilinx.sdx.system.managedbuilder.hwemu.configuration">
                     					
-                    <folderInfo id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.485366727." name="/" resourcePath="">
+                    <folderInfo id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1340438310." name="/" resourcePath="">
                         						
-                        <toolChain id="com.xilinx.sdx.system.managedbuilder.release.toolChain.493799744" name="System Toolchain" superClass="com.xilinx.sdx.system.managedbuilder.release.toolChain">
+                        <toolChain id="com.xilinx.sdx.system.managedbuilder.hw_emu.233142157" name="System Toolchain" superClass="com.xilinx.sdx.system.managedbuilder.hw_emu">
                             							
-                            <targetPlatform id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.485366727..329869061" name=""/>
+                            <targetPlatform id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1340438310..1008150228" name=""/>
                             							
-                            <builder buildPath="${workspace_loc:/interface_test_cpu_system}/Release" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1804617038" managedBuildOn="true" name="System Project Builder.Release" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
+                            <builder buildPath="${workspace_loc:/interface_test_cpu_system}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1810001712" managedBuildOn="true" name="System Project Builder.Emulation-HW" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
                             							
-                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1749743829" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
+                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1736555217" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="com.xilinx.sdx.system.managedbuilder.hw.configuration.711761701">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.711761701" moduleId="org.eclipse.cdt.core.settings" name="Hardware">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.711761701" name="Hardware" parent="com.xilinx.sdx.system.managedbuilder.hw.configuration">
+                    					
+                    <folderInfo id="com.xilinx.sdx.system.managedbuilder.hw.configuration.711761701." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.xilinx.sdx.system.managedbuilder.hw.52581918" name="System Toolchain" superClass="com.xilinx.sdx.system.managedbuilder.hw">
+                            							
+                            <targetPlatform id="com.xilinx.sdx.system.managedbuilder.hw.configuration.711761701..1508964156" name=""/>
+                            							
+                            <builder buildPath="${workspace_loc:/interface_test_cpu_system}/Hardware" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1509425777" managedBuildOn="true" name="System Project Builder.Hardware" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
+                            							
+                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1093804837" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
                             						
                         </toolChain>
                         					
@@ -93,7 +135,7 @@
     	
     <storageModule moduleId="cdtBuildSystem" version="4.0.0">
         		
-        <project id="interface_test_cpu_system.com.xilinx.sdx.system.managedbuilder.projectType.1323110521" name="Vitis Embedded System Project" projectType="com.xilinx.sdx.system.managedbuilder.projectType"/>
+        <project id="interface_test_cpu_system.com.xilinx.sdx.system.managedbuilder.unified.projectType.1714955022" name="Vitis Unified System Project" projectType="com.xilinx.sdx.system.managedbuilder.unified.projectType"/>
         	
     </storageModule>
     	

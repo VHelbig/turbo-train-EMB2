@@ -25,6 +25,10 @@ out_r {
 	offset 28
 	offset_end 39
 }
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
 }
 dict set axilite_register_dict control $port_control
 
@@ -60,29 +64,15 @@ eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
     max_latency -1 \ 
     delay_budget 7.3 \ 
     is_flushable 0 \ 
-    name {image_processing_gmem_m_axi} \
+    name {image_processing_AXI_DATA_m_axi} \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem'"
+puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'AXI_DATA'"
 }
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler image_processing_gmem_m_axi
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_ctrl \
-    type ap_ctrl \
-    reset_level 0 \
-    sync_rst true \
-    corename ap_ctrl \
-    op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
-} "
+	::AP::rtl_comp_handler image_processing_AXI_DATA_m_axi
 }
 
 
@@ -92,7 +82,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -1 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \
@@ -112,7 +102,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -2 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \

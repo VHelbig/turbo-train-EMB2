@@ -379,9 +379,9 @@ __attribute__((sdx_kernel("image_processing", 0))) void image_processing(volatil
 #pragma HLS TOP name=image_processing
 # 6 "main.cpp"
 
-#pragma HLS INTERFACE m_axi port=in offset=slave
-#pragma HLS INTERFACE m_axi port=out offset=slave
-
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE m_axi port=in offset=slave bundle=AXI_DATA
+#pragma HLS INTERFACE m_axi port=out offset=slave bundle=AXI_DATA
 
 
  VITIS_LOOP_12_1: for (int i = 0; i < 1000*3; i++) {

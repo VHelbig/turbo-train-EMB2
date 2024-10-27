@@ -2,3 +2,24 @@ timestamp=[2024-10-27 11:11:29], mode=WORKBENCH_START, duration=0:00:17.760, dur
 timestamp=[2024-10-27 11:11:31], mode=WORKBENCH_UI_INIT, duration=0:00:01.218, duration_ms=1218, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
 timestamp=[2024-10-27 11:11:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:07.579, duration_ms=7579, data={}
 timestamp=[2024-10-27 11:15:49], mode=APP_CREATION, duration=0:00:51.042, duration_ms=51042, data={name=interface_test_cpu, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=interface_test, application_type=application}
+timestamp=[2024-10-27 11:46:22], mode=WORKBENCH_START, duration=0:00:26.249, duration_ms=26249, data={}
+timestamp=[2024-10-27 11:46:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.095, duration_ms=95, data={}
+timestamp=[2024-10-27 11:46:24], mode=WORKBENCH_UI_INIT, duration=0:00:02.386, duration_ms=2386, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,interface_test,interface_test_cpu,interface_test_cpu_system}
+timestamp=[2024-10-27 11:48:54], mode=PLATFORM_GENERATION, duration=0:01:25.879, duration_ms=85879, data={name=interface_test}
+timestamp=[2024-10-27 11:49:13], mode=BUILD, duration=0:00:00.995, duration_ms=995, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:40:20], mode=WORKBENCH_START, duration=0:00:36.575, duration_ms=36575, data={}
+timestamp=[2024-10-27 17:40:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.192, duration_ms=192, data={}
+timestamp=[2024-10-27 17:40:24], mode=WORKBENCH_UI_INIT, duration=0:00:04.053, duration_ms=4053, data={editors_count=3, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,interface_test,interface_test_cpu,interface_test_cpu_system}
+timestamp=[2024-10-27 17:42:12], mode=PLATFORM_GENERATION, duration=0:00:08.825, duration_ms=8825, data={name=interface_test}
+timestamp=[2024-10-27 17:42:24], mode=BUILD, duration=0:00:01.850, duration_ms=1850, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:42:38], mode=BUILD, duration=0:00:01.643, duration_ms=1643, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:51:55], mode=BUILD, duration=0:00:00.808, duration_ms=808, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:53:50], mode=BUILD, duration=0:00:00.800, duration_ms=800, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:55:02], mode=PLATFORM_GENERATION, duration=0:00:09.647, duration_ms=9647, data={name=interface_test}
+timestamp=[2024-10-27 17:55:03], mode=BUILD, duration=0:00:00.543, duration_ms=543, data={name=interface_test_cpu, configuration=Debug, clean_build=true}
+timestamp=[2024-10-27 17:56:18], mode=PLATFORM_GENERATION, duration=0:01:09.411, duration_ms=69411, data={name=interface_test}
+timestamp=[2024-10-27 17:56:32], mode=BUILD, duration=0:00:00.860, duration_ms=860, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 17:58:23], mode=APP_CREATION, duration=0:00:33.687, duration_ms=33687, data={name=interface_test_cpu, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=u96v2_sbc_mp4d, application_type=application}
+timestamp=[2024-10-27 18:07:22], mode=PLATFORM_GENERATION, duration=0:01:01.935, duration_ms=61935, data={name=u96v2_sbc_mp4d}
+timestamp=[2024-10-27 18:07:37], mode=BUILD, duration=0:00:01.112, duration_ms=1112, data={name=interface_test_cpu, configuration=Debug, clean_build=false}
+timestamp=[2024-10-27 18:07:53], mode=BUILD, duration=0:00:00.795, duration_ms=795, data={name=interface_test_cpu, configuration=Debug, clean_build=false}

@@ -1,6 +1,6 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>gmem</name>
+<name>AXI_DATA</name>
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>

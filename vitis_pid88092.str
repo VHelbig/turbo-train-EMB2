@@ -1,0 +1,233 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 88092
+License: Customer
+
+Current time: 	Sun Oct 27 17:40:24 CET 2024
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.15.0-122-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1600x900
+Available screens: 1
+Available disk space: 133 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	vincent
+User home directory: /home/vincent
+User working directory: /home/vincent/Embedded-System/turbo-train-EMB2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/vincent/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/vincent/Embedded-System/turbo-train-EMB2/bare_metal
+Vitis workspace log file location: /home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("interface_test", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing.h", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+selectTreeTable("Debug", "interface_test_cpu_system > interface_test_cpu", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test", "interface_test_cpu_system > interface_test_cpu", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/vincent/Embedded-System/turbo-train-EMB2/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+selectTreeTable("interface_test", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "interface_test_cpu_system > interface_test_cpu", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("Debug", "interface_test_cpu_system > interface_test_cpu", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("src", "interface_test_cpu_system > interface_test_cpu", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("ximage_processing.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "interface_test_cpu/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+activateView("helloworld.c", "interface_test_cpu/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("interface_test", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("ximage_processing.h", "interface_test > hw > drivers > image_processing_v1_0 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "interface_test_cpu/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("interface_test", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("interface_test_cpu_system", "interface_test_cpu_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("interface_test", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectCheckBox("Delete project contents on disk", Boolean.TRUE, "Delete Resources", "RefactoringWizardDialog2", "Button.DELETE_PROJECT_CONTENTS");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/vincent/Embedded-System/turbo-train-EMB2/hdl/projects/u96v2_sbc_mp4d_2020_2/u96v2_sbc_mp4d.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("interface_test_cpu", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lscript.ld", "interface_test_cpu_system > interface_test_cpu > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.STACK_SIZE");
+setTextField("0x200000", "lscript.ld", "LscriptEditor", "Text.HEAP_SIZE");
+closeView("lscript.ld", "interface_test_cpu/src/lscript.ld", "LscriptEditor", "CTabItem.LSCRIPT_LD");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+selectButton("Cancel", "Properties for interface_test_cpu", "PropertyDialog", "Button.CANCEL");
+selectTreeTable("interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+selectButton("Cancel", "Properties for interface_test_cpu_system", "PropertyDialog", "Button.CANCEL");
+selectTreeTable("interface_test_cpu.prj", "interface_test_cpu_system > interface_test_cpu", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu_system.sprj", "interface_test_cpu_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu.prj", "interface_test_cpu_system > interface_test_cpu", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("u96v2_sbc_mp4d", "interface_test_cpu_system > interface_test_cpu", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("platform.tcl", "u96v2_sbc_mp4d", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("src", "interface_test_cpu_system > interface_test_cpu", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("interface_test_cpu_system.sprj", "interface_test_cpu_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("standalone_psu_cortexa53_0", "interface_test_cpu_system", "interface_test_cpu_system", "SystemSettingsEditor", "SystemSettingsEditor");
+activateView("interface_test_cpu", "interface_test_cpu/interface_test_cpu.prj", "SDXSettingsEditor", "CTabItem.INTERFACE_TEST_CPU");
+activateView("interface_test_cpu_system", "interface_test_cpu_system/interface_test_cpu_system", "SystemSettingsEditor", "CTabItem.INTERFACE_TEST_CPU_SYSTEM");
+selectHyperlink("interface_test_cpu_system", "interface_test_cpu_system", "SystemSettingsEditor", "Hyperlink.INTERFACE_TEST_CPU_SYSTEM");
+selectButton("Cancel", "Properties for interface_test_cpu_system", "PropertyDialog", "Button.CANCEL");
+selectTreeTable("standalone_psu_cortexa53_0", "interface_test_cpu_system", "SystemSettingsEditor", "SystemSettingsEditor");
+closeView("interface_test_cpu_system", "interface_test_cpu_system/interface_test_cpu_system.sprj", "SystemSettingsEditor", "CTabItem.INTERFACE_TEST_CPU_SYSTEM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("interface_test_cpu", "interface_test_cpu/interface_test_cpu.prj", "SDXSettingsEditor", "CTabItem.INTERFACE_TEST_CPU");
+selectTreeTable("interface_test_cpu.prj", "interface_test_cpu_system > interface_test_cpu", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("Navigate to BSP Settings", "interface_test_cpu", "SDXSettingsEditor", "Button.NAVIGATE_TO_BSP");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectButton("Modify BSP Settings", "u96v2_sbc_mp4d", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("stdin", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("stdout", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("helloworld.c", "interface_test_cpu_system > interface_test_cpu > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Shows background operations in Progress view", "interface_test_cpu", "WorkbenchWindow", "ToolItem.SHOWS_BACKGROUND");
+activateView("Progress", "ProgressView", "CTabItem.PROGRESS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Guidance", "SDXDrcView", "CTabItem.GUIDANCE");
+activateView("Vitis Log", "SdkLogView", "CTabItem.VITIS_LOG");
+selectTreeTable("Includes", "interface_test_cpu_system > interface_test_cpu", "Vitis Log", "SDKLogView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("Debug", "interface_test_cpu_system > interface_test_cpu", "Vitis Log", "SDKLogView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Progress", "ProgressView", "CTabItem.PROGRESS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("2 Launch on Emulator", "interface_test_cpu", "WorkbenchWindow", "MenuItem.2_LAUNCH_ON_EMULATOR");
+selectButton("Start Emulator and Run", "Launch On Emulator", "MessageDialog", "Button.START_EMULATOR_AND");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+selectToolBarButton("Design", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+activateView("XSCT Console", "XSDBConsoleView", "CTabItem.XSCT_CONSOLE");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+selectMenuItem("Toggle Breakpoint", "helloworld.c", "WorkbenchWindow", "MenuItem.TOGGLE_BREAKPOINT");
+selectToolBarMenuButton("Debug", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DEBUG");
+selectMenuItem("1 Debugger_interface_test_cpu-Emulation", "helloworld.c", "WorkbenchWindow", "MenuItem.1_DEBUGGER_INTERFACE_TEST_CPU_EMULATION");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("Restart Emulator and Debug", "Launch On Emulator", "MessageDialog", "Button.RESTART_EMULATOR");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+selectToolBarButton("Resume", "interface_test_cpu", "WorkbenchWindow", "ToolItem.RESUME");
+selectMenuItem("Toggle Breakpoint", "helloworld.c", "WorkbenchWindow", "MenuItem.TOGGLE_BREAKPOINT");
+selectToolBarButton("Suspend", "interface_test_cpu", "WorkbenchWindow", "ToolItem.SUSPEND");
+activateView("Debug", "LaunchView", "CTabItem.DEBUG");
+selectTree("0x0000000000001110 XImage_processing_IsDone", "Debugger_interface_test_cpu-Emulation > GdbClient > p1 > Cortex-A53 #0", "Debug", "LaunchView", "Tree.LaunchManager");
+selectTree("0x0000000000000e60 main", "Debugger_interface_test_cpu-Emulation > GdbClient > p1 > Cortex-A53 #0", "Debug", "LaunchView", "Tree.LaunchManager");
+selectTree("Cortex-R5 #0", "Debugger_interface_test_cpu-Emulation > GdbClient > p2", "Debug", "LaunchView", "Tree.LaunchManager");
+selectTree("Cortex-A53 #0", "Debugger_interface_test_cpu-Emulation > GdbClient > p1", "Debug", "LaunchView", "Tree.LaunchManager");
+selectTree("Cortex-A53 #1", "Debugger_interface_test_cpu-Emulation > GdbClient > p1", "Debug", "LaunchView", "Tree.LaunchManager");
+selectTree("0x0000000000002328 Xil_Assert", "Debugger_interface_test_cpu-Emulation > GdbClient > p1 > Cortex-A53 #0", "Debug", "LaunchView", "Tree.LaunchManager");
+activateView("helloworld.c", "interface_test_cpu/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Debug", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DEBUG");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("Restart Emulator and Debug", "Launch On Emulator", "MessageDialog", "Button.RESTART_EMULATOR");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+selectToolBarButton("Step Over", "interface_test_cpu", "WorkbenchWindow", "ToolItem.STEP_OVER");
+activateView("Memory", "MemoryView", "CTabItem.MEMORY");
+selectTree("status", "Variables", "VariablesView", "Tree.STATUS");
+selectTree("passed", "Variables", "VariablesView", "Tree.PASSED");
+selectToolBarButton("Step Over", "interface_test_cpu", "WorkbenchWindow", "ToolItem.STEP_OVER");
+selectMenuItem("Toggle Breakpoint", "helloworld.c", "WorkbenchWindow", "MenuItem.TOGGLE_BREAKPOINT");
+selectToolBarButton("Resume", "interface_test_cpu", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Step Over", "interface_test_cpu", "WorkbenchWindow", "ToolItem.STEP_OVER");
+selectToolBarButton("Resume", "interface_test_cpu", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Step Over", "interface_test_cpu", "WorkbenchWindow", "ToolItem.STEP_OVER");
+selectToolBarButton("Resume", "interface_test_cpu", "WorkbenchWindow", "ToolItem.RESUME");
+selectMenuItem("Toggle Breakpoint", "helloworld.c", "WorkbenchWindow", "MenuItem.TOGGLE_BREAKPOINT");
+selectToolBarButton("Resume", "interface_test_cpu", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Debug", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "interface_test_cpu", "WorkbenchWindow", "ToolItem.DESIGN");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 10/27/24, 6:15:57 PM CET
+// Elapsed time: 00:35:35
+

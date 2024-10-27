@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="interface_test_cpu" location="/home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/interface_test_cpu" platform="/home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d/u96v2_sbc_mp4d.xpfm" platformUID="sdu.dk/diii:u96v2_sbc_mp4d:u96v2_sbc_mp4d:1.0(custom)" systemProject="interface_test_cpu_system" sysConfig="u96v2_sbc_mp4d" runtime="cpp" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="2d461f77db295e885f36cdf98e0abab9">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1278248376">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1252451726" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

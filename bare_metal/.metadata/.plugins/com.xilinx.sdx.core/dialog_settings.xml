@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="/home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/interface_test/export/interface_test"/>
+	<item key="sdx.custom.platform.repository.locations" value="/home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/u96v2_sbc_mp4d/export/u96v2_sbc_mp4d"/>
 </section>

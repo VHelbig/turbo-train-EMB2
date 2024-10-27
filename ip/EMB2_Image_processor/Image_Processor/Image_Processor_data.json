@@ -23,7 +23,7 @@
       "hwRefs": [
         {
           "type": "interface",
-          "interface": "m_axi_gmem",
+          "interface": "m_axi_AXI_DATA",
           "name": "",
           "usage": "data",
           "direction": "out"
@@ -52,7 +52,7 @@
       "hwRefs": [
         {
           "type": "interface",
-          "interface": "m_axi_gmem",
+          "interface": "m_axi_AXI_DATA",
           "name": "",
           "usage": "data",
           "direction": "out"
@@ -76,7 +76,15 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top image_processing -name image_processing"],
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -output=\/home\/vincent\/Embedded-System\/turbo-train-EMB2\/ip\/EMB2_Image_processor\/image_processing.zip",
+      "config_export -rtl=vhdl"
+    ],
+    "DirectiveTcl": [
+      "set_directive_top image_processing -name image_processing",
+      "set_directive_top image_processing -name image_processing"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "image_processing"
@@ -105,13 +113,13 @@
   "Files": {
     "CSource": ["..\/..\/main.cpp"],
     "Vhdl": [
+      "impl\/vhdl\/image_processing_AXI_DATA_m_axi.vhd",
       "impl\/vhdl\/image_processing_control_s_axi.vhd",
-      "impl\/vhdl\/image_processing_gmem_m_axi.vhd",
       "impl\/vhdl\/image_processing.vhd"
     ],
     "Verilog": [
+      "impl\/verilog\/image_processing_AXI_DATA_m_axi.v",
       "impl\/verilog\/image_processing_control_s_axi.v",
-      "impl\/verilog\/image_processing_gmem_m_axi.v",
       "impl\/verilog\/image_processing.v"
     ],
     "SwDriver": [
@@ -140,28 +148,11 @@
       "busTypeName": "clock",
       "mode": "slave",
       "busParams": {
-        "ASSOCIATED_BUSIF": "s_axi_control:m_axi_gmem",
+        "ASSOCIATED_BUSIF": "s_axi_control:m_axi_AXI_DATA",
         "ASSOCIATED_RESET": "ap_rst_n"
       },
       "portMap": {"ap_clk": "CLK"},
       "ports": ["ap_clk"]
-    },
-    "ap_ctrl": {
-      "type": "ap_ctrl",
-      "busTypeName": "acc_handshake",
-      "mode": "slave",
-      "portMap": {
-        "ap_start": "start",
-        "ap_done": "done",
-        "ap_idle": "idle",
-        "ap_ready": "ready"
-      },
-      "ports": [
-        "ap_done",
-        "ap_idle",
-        "ap_ready",
-        "ap_start"
-      ]
     },
     "ap_rst_n": {
       "type": "reset",
@@ -171,14 +162,23 @@
       "portMap": {"ap_rst_n": "RST"},
       "ports": ["ap_rst_n"]
     },
-    "m_axi_gmem": {
+    "interrupt": {
+      "type": "interrupt",
+      "busTypeName": "interrupt",
+      "mode": "master",
+      "dataWidth": "1",
+      "busParams": {"SENSITIVITY": "LEVEL_HIGH"},
+      "portMap": {"interrupt": "INTERRUPT"},
+      "ports": ["interrupt"]
+    },
+    "m_axi_AXI_DATA": {
       "type": "axi4full",
       "busTypeName": "aximm",
       "mode": "master",
       "dataWidth": "32",
       "addrWidth": "64",
-      "portPrefix": "m_axi_gmem_",
-      "paramPrefix": "C_M_AXI_GMEM_",
+      "portPrefix": "m_axi_AXI_DATA_",
+      "paramPrefix": "C_M_AXI_AXI_DATA_",
       "offsetSlaveName": "s_axi_control",
       "preferredUsageValue": "MEMORY",
       "busParams": {
@@ -193,51 +193,51 @@
         "SUPPORTS_NARROW_BURST": "0"
       },
       "ports": [
-        "m_axi_gmem_ARADDR",
-        "m_axi_gmem_ARBURST",
-        "m_axi_gmem_ARCACHE",
-        "m_axi_gmem_ARID",
-        "m_axi_gmem_ARLEN",
-        "m_axi_gmem_ARLOCK",
-        "m_axi_gmem_ARPROT",
-        "m_axi_gmem_ARQOS",
-        "m_axi_gmem_ARREADY",
-        "m_axi_gmem_ARREGION",
-        "m_axi_gmem_ARSIZE",
-        "m_axi_gmem_ARUSER",
-        "m_axi_gmem_ARVALID",
-        "m_axi_gmem_AWADDR",
-        "m_axi_gmem_AWBURST",
-        "m_axi_gmem_AWCACHE",
-        "m_axi_gmem_AWID",
-        "m_axi_gmem_AWLEN",
-        "m_axi_gmem_AWLOCK",
-        "m_axi_gmem_AWPROT",
-        "m_axi_gmem_AWQOS",
-        "m_axi_gmem_AWREADY",
-        "m_axi_gmem_AWREGION",
-        "m_axi_gmem_AWSIZE",
-        "m_axi_gmem_AWUSER",
-        "m_axi_gmem_AWVALID",
-        "m_axi_gmem_BID",
-        "m_axi_gmem_BREADY",
-        "m_axi_gmem_BRESP",
-        "m_axi_gmem_BUSER",
-        "m_axi_gmem_BVALID",
-        "m_axi_gmem_RDATA",
-        "m_axi_gmem_RID",
-        "m_axi_gmem_RLAST",
-        "m_axi_gmem_RREADY",
-        "m_axi_gmem_RRESP",
-        "m_axi_gmem_RUSER",
-        "m_axi_gmem_RVALID",
-        "m_axi_gmem_WDATA",
-        "m_axi_gmem_WID",
-        "m_axi_gmem_WLAST",
-        "m_axi_gmem_WREADY",
-        "m_axi_gmem_WSTRB",
-        "m_axi_gmem_WUSER",
-        "m_axi_gmem_WVALID"
+        "m_axi_AXI_DATA_ARADDR",
+        "m_axi_AXI_DATA_ARBURST",
+        "m_axi_AXI_DATA_ARCACHE",
+        "m_axi_AXI_DATA_ARID",
+        "m_axi_AXI_DATA_ARLEN",
+        "m_axi_AXI_DATA_ARLOCK",
+        "m_axi_AXI_DATA_ARPROT",
+        "m_axi_AXI_DATA_ARQOS",
+        "m_axi_AXI_DATA_ARREADY",
+        "m_axi_AXI_DATA_ARREGION",
+        "m_axi_AXI_DATA_ARSIZE",
+        "m_axi_AXI_DATA_ARUSER",
+        "m_axi_AXI_DATA_ARVALID",
+        "m_axi_AXI_DATA_AWADDR",
+        "m_axi_AXI_DATA_AWBURST",
+        "m_axi_AXI_DATA_AWCACHE",
+        "m_axi_AXI_DATA_AWID",
+        "m_axi_AXI_DATA_AWLEN",
+        "m_axi_AXI_DATA_AWLOCK",
+        "m_axi_AXI_DATA_AWPROT",
+        "m_axi_AXI_DATA_AWQOS",
+        "m_axi_AXI_DATA_AWREADY",
+        "m_axi_AXI_DATA_AWREGION",
+        "m_axi_AXI_DATA_AWSIZE",
+        "m_axi_AXI_DATA_AWUSER",
+        "m_axi_AXI_DATA_AWVALID",
+        "m_axi_AXI_DATA_BID",
+        "m_axi_AXI_DATA_BREADY",
+        "m_axi_AXI_DATA_BRESP",
+        "m_axi_AXI_DATA_BUSER",
+        "m_axi_AXI_DATA_BVALID",
+        "m_axi_AXI_DATA_RDATA",
+        "m_axi_AXI_DATA_RID",
+        "m_axi_AXI_DATA_RLAST",
+        "m_axi_AXI_DATA_RREADY",
+        "m_axi_AXI_DATA_RRESP",
+        "m_axi_AXI_DATA_RUSER",
+        "m_axi_AXI_DATA_RVALID",
+        "m_axi_AXI_DATA_WDATA",
+        "m_axi_AXI_DATA_WID",
+        "m_axi_AXI_DATA_WLAST",
+        "m_axi_AXI_DATA_WREADY",
+        "m_axi_AXI_DATA_WSTRB",
+        "m_axi_AXI_DATA_WUSER",
+        "m_axi_AXI_DATA_WVALID"
       ],
       "constraints": [
         {
@@ -269,7 +269,7 @@
       "addrWidth": "6",
       "portPrefix": "s_axi_control_",
       "paramPrefix": "C_S_AXI_CONTROL_",
-      "offsetMasterName": "m_axi_gmem",
+      "offsetMasterName": "m_axi_AXI_DATA",
       "ports": [
         "s_axi_control_ARADDR",
         "s_axi_control_ARREADY",
@@ -290,6 +290,166 @@
         "s_axi_control_WVALID"
       ],
       "registers": [
+        {
+          "offset": "0x00",
+          "name": "CTRL",
+          "access": "RW",
+          "resetValue": "0x0",
+          "description": "Control signals",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "AP_START",
+              "access": "RW",
+              "resetValue": "0",
+              "description": "Control signal Register for 'ap_start'."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "AP_DONE",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Control signal Register for 'ap_done'."
+            },
+            {
+              "offset": "2",
+              "width": "1",
+              "name": "AP_IDLE",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Control signal Register for 'ap_idle'."
+            },
+            {
+              "offset": "3",
+              "width": "1",
+              "name": "AP_READY",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Control signal Register for 'ap_ready'."
+            },
+            {
+              "offset": "4",
+              "width": "3",
+              "name": "RESERVED_1",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Reserved.  0s on read."
+            },
+            {
+              "offset": "7",
+              "width": "1",
+              "name": "AUTO_RESTART",
+              "access": "RW",
+              "resetValue": "0",
+              "description": "Control signal Register for 'auto_restart'."
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED_2",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x04",
+          "name": "GIER",
+          "access": "RW",
+          "resetValue": "0x0",
+          "description": "Global Interrupt Enable Register",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "Enable",
+              "access": "RW",
+              "resetValue": "0",
+              "description": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x08",
+          "name": "IP_IER",
+          "access": "RW",
+          "resetValue": "0x0",
+          "description": "IP Interrupt Enable Register",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_EN",
+              "access": "RW",
+              "resetValue": "0",
+              "description": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_EN",
+              "access": "RW",
+              "resetValue": "0",
+              "description": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x0c",
+          "name": "IP_ISR",
+          "access": "RW",
+          "resetValue": "0x0",
+          "description": "IP Interrupt Status Register",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_ST",
+              "access": "RTOW",
+              "resetValue": "0",
+              "description": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_ST",
+              "access": "RTOW",
+              "resetValue": "0",
+              "description": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "resetValue": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
         {
           "offset": "0x10",
           "name": "in_r_1",
@@ -441,208 +601,196 @@
       "dir": "in",
       "width": "1"
     },
-    "ap_start": {
+    "interrupt": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_AXI_DATA_AWVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_AXI_DATA_AWREADY": {
       "dir": "in",
       "width": "1"
     },
-    "ap_done": {
-      "dir": "out",
-      "width": "1"
-    },
-    "ap_idle": {
-      "dir": "out",
-      "width": "1"
-    },
-    "ap_ready": {
-      "dir": "out",
-      "width": "1"
-    },
-    "m_axi_gmem_AWVALID": {
-      "dir": "out",
-      "width": "1"
-    },
-    "m_axi_gmem_AWREADY": {
-      "dir": "in",
-      "width": "1"
-    },
-    "m_axi_gmem_AWADDR": {
+    "m_axi_AXI_DATA_AWADDR": {
       "dir": "out",
       "width": "64"
     },
-    "m_axi_gmem_AWID": {
+    "m_axi_AXI_DATA_AWID": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_AWLEN": {
+    "m_axi_AXI_DATA_AWLEN": {
       "dir": "out",
       "width": "8"
     },
-    "m_axi_gmem_AWSIZE": {
+    "m_axi_AXI_DATA_AWSIZE": {
       "dir": "out",
       "width": "3"
     },
-    "m_axi_gmem_AWBURST": {
+    "m_axi_AXI_DATA_AWBURST": {
       "dir": "out",
       "width": "2"
     },
-    "m_axi_gmem_AWLOCK": {
+    "m_axi_AXI_DATA_AWLOCK": {
       "dir": "out",
       "width": "2"
     },
-    "m_axi_gmem_AWCACHE": {
+    "m_axi_AXI_DATA_AWCACHE": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_AWPROT": {
+    "m_axi_AXI_DATA_AWPROT": {
       "dir": "out",
       "width": "3"
     },
-    "m_axi_gmem_AWQOS": {
+    "m_axi_AXI_DATA_AWQOS": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_AWREGION": {
+    "m_axi_AXI_DATA_AWREGION": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_AWUSER": {
+    "m_axi_AXI_DATA_AWUSER": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_WVALID": {
+    "m_axi_AXI_DATA_WVALID": {
       "dir": "out",
       "width": "1"
     },
-    "m_axi_gmem_WREADY": {
+    "m_axi_AXI_DATA_WREADY": {
       "dir": "in",
       "width": "1"
     },
-    "m_axi_gmem_WDATA": {
+    "m_axi_AXI_DATA_WDATA": {
       "dir": "out",
       "width": "32"
     },
-    "m_axi_gmem_WSTRB": {
+    "m_axi_AXI_DATA_WSTRB": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_WLAST": {
+    "m_axi_AXI_DATA_WLAST": {
       "dir": "out",
       "width": "1"
     },
-    "m_axi_gmem_WID": {
+    "m_axi_AXI_DATA_WID": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_WUSER": {
+    "m_axi_AXI_DATA_WUSER": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_ARVALID": {
+    "m_axi_AXI_DATA_ARVALID": {
       "dir": "out",
       "width": "1"
     },
-    "m_axi_gmem_ARREADY": {
+    "m_axi_AXI_DATA_ARREADY": {
       "dir": "in",
       "width": "1"
     },
-    "m_axi_gmem_ARADDR": {
+    "m_axi_AXI_DATA_ARADDR": {
       "dir": "out",
       "width": "64"
     },
-    "m_axi_gmem_ARID": {
+    "m_axi_AXI_DATA_ARID": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_ARLEN": {
+    "m_axi_AXI_DATA_ARLEN": {
       "dir": "out",
       "width": "8"
     },
-    "m_axi_gmem_ARSIZE": {
+    "m_axi_AXI_DATA_ARSIZE": {
       "dir": "out",
       "width": "3"
     },
-    "m_axi_gmem_ARBURST": {
+    "m_axi_AXI_DATA_ARBURST": {
       "dir": "out",
       "width": "2"
     },
-    "m_axi_gmem_ARLOCK": {
+    "m_axi_AXI_DATA_ARLOCK": {
       "dir": "out",
       "width": "2"
     },
-    "m_axi_gmem_ARCACHE": {
+    "m_axi_AXI_DATA_ARCACHE": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_ARPROT": {
+    "m_axi_AXI_DATA_ARPROT": {
       "dir": "out",
       "width": "3"
     },
-    "m_axi_gmem_ARQOS": {
+    "m_axi_AXI_DATA_ARQOS": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_ARREGION": {
+    "m_axi_AXI_DATA_ARREGION": {
       "dir": "out",
       "width": "4"
     },
-    "m_axi_gmem_ARUSER": {
+    "m_axi_AXI_DATA_ARUSER": {
       "dir": "out",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_RVALID": {
+    "m_axi_AXI_DATA_RVALID": {
       "dir": "in",
       "width": "1"
     },
-    "m_axi_gmem_RREADY": {
+    "m_axi_AXI_DATA_RREADY": {
       "dir": "out",
       "width": "1"
     },
-    "m_axi_gmem_RDATA": {
+    "m_axi_AXI_DATA_RDATA": {
       "dir": "in",
       "width": "32"
     },
-    "m_axi_gmem_RLAST": {
+    "m_axi_AXI_DATA_RLAST": {
       "dir": "in",
       "width": "1"
     },
-    "m_axi_gmem_RID": {
+    "m_axi_AXI_DATA_RID": {
       "dir": "in",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_RUSER": {
+    "m_axi_AXI_DATA_RUSER": {
       "dir": "in",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_RRESP": {
+    "m_axi_AXI_DATA_RRESP": {
       "dir": "in",
       "width": "2"
     },
-    "m_axi_gmem_BVALID": {
+    "m_axi_AXI_DATA_BVALID": {
       "dir": "in",
       "width": "1"
     },
-    "m_axi_gmem_BREADY": {
+    "m_axi_AXI_DATA_BREADY": {
       "dir": "out",
       "width": "1"
     },
-    "m_axi_gmem_BRESP": {
+    "m_axi_AXI_DATA_BRESP": {
       "dir": "in",
       "width": "2"
     },
-    "m_axi_gmem_BID": {
+    "m_axi_AXI_DATA_BID": {
       "dir": "in",
       "width": "1",
       "isVector": "true"
     },
-    "m_axi_gmem_BUSER": {
+    "m_axi_AXI_DATA_BUSER": {
       "dir": "in",
       "width": "1",
       "isVector": "true"
@@ -682,7 +830,7 @@
           "BRAM_18K": "2",
           "AVAIL_BRAM": "432",
           "UTIL_BRAM": "~0",
-          "FF": "873",
+          "FF": "879",
           "AVAIL_FF": "141120",
           "UTIL_FF": "~0",
           "LUT": "1058",
@@ -700,7 +848,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-10-23 16:38:31 CEST",
+    "Time": "2024-10-27 16:29:39 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

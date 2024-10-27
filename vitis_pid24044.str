@@ -1,0 +1,160 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 24044
+License: Customer
+
+Current time: 	Sun Oct 27 11:46:24 CET 2024
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.15.0-122-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1600x900
+Available screens: 1
+Available disk space: 133 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.2/lib/lnx64.o:/tools/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	vincent
+User home directory: /home/vincent
+User working directory: /home/vincent/Embedded-System/turbo-train-EMB2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/vincent/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/vincent/Embedded-System/turbo-train-EMB2/bare_metal
+Vitis workspace log file location: /home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("helloworld.c", "interface_test_cpu_system > interface_test_cpu > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test_cpu", "interface_test_cpu_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("Window", "interface_test_cpu", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Preferences", "interface_test_cpu", "WorkbenchWindow", "MenuItem.PREFERENCES");
+setTextField("theme", "Preferences", "CustomPreferenceDialog", "Text");
+selectTree("Colors and Fonts", "Additional > General > Appearance", "Preferences", "CustomPreferenceDialog", "Tree.WorkbenchPreferenceManager");
+selectTree("Appearance", "Additional > General", "Preferences", "CustomPreferenceDialog", "Tree.WorkbenchPreferenceManager");
+selectCombo("Dark", "Preferences", "CustomPreferenceDialog", "Combo.THEME");
+selectButton("Apply and Close", "Preferences", "CustomPreferenceDialog", "Button.APPLY_AND_CLOSE");
+selectMenuItem("Window", "interface_test_cpu", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Preferences", "interface_test_cpu", "WorkbenchWindow", "MenuItem.PREFERENCES");
+selectTree("Additional", "Preferences", "CustomPreferenceDialog", "Tree.WorkbenchPreferenceManager");
+selectTree("Colors and Fonts", "Additional > General > Appearance", "Preferences", "CustomPreferenceDialog", "Tree.WorkbenchPreferenceManager");
+selectTree("Terminal Console Font", "Additional > General > Appearance", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectButton("Edit", "Preferences", "CustomPreferenceDialog", "Button.EDIT");
+selectTree("View and Editor Folders", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Tracing", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Text Compare", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Structured Text Editors", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Remote System Explorer", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Java", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Git", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Basic", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Text Font", "Basic", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectButton("Edit", "Preferences", "CustomPreferenceDialog", "Button.EDIT");
+selectTree("Text Font", "Basic", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Range indicator color", "Basic", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+selectTree("Keys background color", "Basic", "Preferences", "CustomPreferenceDialog", "Tree.ThemeRegistry");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing_hw.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("ximage_processing_hw.h", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing_hw.h", "CEditor", "CTabItem.XIMAGE_PROCESSING_HW_H");
+activateView("*helloworld.c", "interface_test_cpu/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+selectTreeTable("ximage_processing.c", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+activateView("*helloworld.c", "interface_test_cpu/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+activateView("*helloworld.c", "interface_test_cpu/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("ximage_processing.c", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+activateView("ximage_processing.c", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+activateView("*helloworld.c", "interface_test_cpu/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+selectTreeTable("ximage_processing_linux.c", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("ximage_processing_linux.c", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing_linux.c", "CEditor", "CTabItem.XIMAGE_PROCESSING_LINUX_C");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing_hw.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("ximage_processing_hw.h", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing_hw.h", "CEditor", "CTabItem.XIMAGE_PROCESSING_HW_H");
+activateView("ximage_processing.c", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+selectTreeTable("ximage_processing.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing.c", "interface_test > hw > drivers > image_processing_v1_0 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTextEditor("ximage_processing.c", "interface_test/hw/drivers/image_processing_v1_0/src", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.XIMAGE_PROCESSING_C");
+selectMenuItem("Open Declaration", "ximage_processing.c", "WorkbenchWindow", "MenuItem.OPEN_DECLARATION");
+selectTextEditor("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.XIMAGE_PROCESSING_H");
+selectMenuItem("Open Declaration", "ximage_processing.h", "WorkbenchWindow", "MenuItem.OPEN_DECLARATION");
+selectTable("XImage_processing_WriteReg", "Open Declaration", "Table", "Table");
+selectButton("OK", "Open Declaration", "Button", "OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing_sinit.c", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing_linux.c", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing.c", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ximage_processing.h", "interface_test > hw > drivers > image_processing_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTextEditor("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.XIMAGE_PROCESSING_H");
+selectMenuItem("Open Declaration", "ximage_processing.h", "WorkbenchWindow", "MenuItem.OPEN_DECLARATION");
+selectButton("Cancel", "Open Declaration", "Button", "CANCEL");
+selectTextEditor("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.XIMAGE_PROCESSING_H");
+setCombo("XImage_processing_WriteReg", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Close", "Find/Replace", "FindReplaceDialog", "Button.CLOSE");
+activateView("*helloworld.c", "interface_test_cpu/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("ximage_processing.h", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_H");
+closeView("ximage_processing_sinit.c", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing_sinit.c", "CEditor", "CTabItem.XIMAGE_PROCESSING_SINIT_C");
+activateView("ximage_processing_linux.c", "interface_test/hw/drivers/image_processing_v1_0/src", "CEditor", "CTabItem.XIMAGE_PROCESSING_LINUX_C");
+closeView("ximage_processing_linux.c", "interface_test/hw/drivers/image_processing_v1_0/src/ximage_processing_linux.c", "CEditor", "CTabItem.XIMAGE_PROCESSING_LINUX_C");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("interface_test", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+selectButton("Cancel", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.CANCEL");
+selectButton("Save", "Save Resource", "Button", "SAVE");
+// Exiting Xilinx Vitis with a status code '0' at 10/27/24, 5:38:51 PM CET
+// Elapsed time: 05:52:27
+

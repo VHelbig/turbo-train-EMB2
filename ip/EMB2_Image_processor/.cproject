@@ -60,8 +60,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
                                     								
                                 </option>
                                 								
@@ -96,8 +94,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
                                     								
                                 </option>
                                 								
@@ -160,6 +156,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1767920395.637114028" name="main_test_bench.cpp" rcbsApplicability="disable" resourcePath="testbench/main_test_bench.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1947670719.1457862465">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1947670719.1457862465" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1947670719">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1905997615" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1995340359" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1085521658" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1693191320" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						
@@ -232,8 +258,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
                                     								
                                 </option>
                                 								
@@ -258,8 +282,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
                                     								
                                 </option>
                                 								
@@ -312,6 +334,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.566520650.116745398" name="main_test_bench.cpp" rcbsApplicability="disable" resourcePath="testbench/main_test_bench.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.346560309.500409238">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.346560309.500409238" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.346560309">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.357647630" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.219269877" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/home/vincent/Embedded-System/turbo-train-EMB2/ip"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.772258276" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.458529281" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						

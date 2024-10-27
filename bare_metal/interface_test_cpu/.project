@@ -3,7 +3,7 @@
 	<name>interface_test_cpu</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
-		<project>interface_test</project>
+		<project>u96v2_sbc_mp4d</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

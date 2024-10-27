@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="image_processing" name="EMB2_Image_processor">
+<project xmlns="com.autoesl.autopilot.project" name="EMB2_Image_processor" top="image_processing">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

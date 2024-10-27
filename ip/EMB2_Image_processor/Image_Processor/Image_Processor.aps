@@ -6,7 +6,7 @@
         <DownStreamTool name="vivado"/>
     </downStreamTool>
     <config>
-        <config_export format="ip_catalog" output="/home/vincent/Embedded-System/turbo-train-EMB2/ip/EMB2_Image_processor/Image_Processor/image_processing.zip" rtl="vhdl"/>
+        <config_export format="ip_catalog" output="/home/vincent/Embedded-System/turbo-train-EMB2/ip/image_processing.zip" rtl="vhdl"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="Ultra96v2 Evaluation Platform (xczu3eg-sbva484-1-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -40,12 +40,13 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="/home/vincent/Embedded-System/turbo-train-EMB2/ip/EMB2_Image_processor/Image_Processor/image_processing.zip" rtl="verilog" rtlButton="true" rtlCombo="vhdl">
+    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="/home/vincent/Embedded-System/turbo-train-EMB2/ip/image_processing.zip" rtl="verilog" rtlButton="true" rtlCombo="vhdl">
         <Format formatName="ip_catalog" description="" vendor="" library="" ipname="image_processing" version="" display_name="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
+        <Format formatName="xo"/>
     </ExportDesign>
     <Simulation>
         <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
@@ -70,7 +71,7 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="10"/>
+        <clock name="default" default="false" period="10"/>
     </clockList>
 </solution>
 

@@ -46,9 +46,13 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "ximage_processing.h"
 
+XImage_processing_Config* ImageProcessor_ConfgPtr;
+XImage_processing XmageProcessor;
 
 int main()
 {
@@ -56,6 +60,45 @@ int main()
 
     print("Hello World\n\r");
     print("Successfully ran Hello World application");
+
+    ImageProcessor_ConfgPtr=XImage_processing_LookupConfig(XPAR_IMAGE_PROCESSING_0_DEVICE_ID);
+    int status=XImage_processing_CfgInitialize(&XmageProcessor, ImageProcessor_ConfgPtr);
+    if(status!=XST_SUCCESS){
+    	print("error Occured while initializing Config Ptr\r\n");
+    }
+
+    status=XImage_processing_Initialize(&XmageProcessor, XPAR_IMAGE_PROCESSING_0_DEVICE_ID);
+    if(status!=XST_SUCCESS){
+		print("error Occured while initializing Image Processor\r\n");
+	}
+
+    int input[3000];
+    for(int i=0;i<3000;i++){
+    	input[i]=rand();
+    }
+    int output[3000];
+
+    while(!XImage_processing_IsReady(&XmageProcessor)){}
+
+	XImage_processing_Set_in_r(&XmageProcessor, input);
+	XImage_processing_Set_out_r(&XmageProcessor, output);
+	XImage_processing_Start(&XmageProcessor);
+
+	while(!XImage_processing_IsDone(&XmageProcessor)){}
+
+	char passed=1;
+	for(int i=0;i<3000;i++){
+		if(input[i]!=output[i]){
+			passed=0;
+		}
+	}
+	if (passed){
+		xil_printf("Test Passed %d",passed);
+	}else{
+		xil_printf("Test not passed %d",passed);
+	}
+
+
     cleanup_platform();
     return 0;
 }
