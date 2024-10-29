@@ -27,3 +27,7 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform active {u96v2_sbc_mp4d}
+platform config -updatehw {/home/vincent/Embedded-System/turbo-train-EMB2/bare_metal/interface_test.xsa}
+platform clean
+platform generate

@@ -224,13 +224,13 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRL_APB_RPLL_FRAC_CFG_ENABLED                           0x1
 
     * Fractional value for the Feedback value.
-    *  PSU_CRL_APB_RPLL_FRAC_CFG_DATA                              0xc76c
+    *  PSU_CRL_APB_RPLL_FRAC_CFG_DATA                              0x0
 
     * Fractional control for the PLL
-    * (OFFSET, MASK, VALUE)      (0XFF5E0038, 0x8000FFFFU ,0x8000C76CU)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0038, 0x8000FFFFU ,0x80000000U)
     */
 	PSU_Mask_Write(CRL_APB_RPLL_FRAC_CFG_OFFSET,
-		0x8000FFFFU, 0x8000C76CU);
+		0x8000FFFFU, 0x80000000U);
 /*##################################################################### */
 
     /*
@@ -924,13 +924,13 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRF_APB_VPLL_FRAC_CFG_ENABLED                           0x1
 
     * Fractional value for the Feedback value.
-    *  PSU_CRF_APB_VPLL_FRAC_CFG_DATA                              0x497f
+    *  PSU_CRF_APB_VPLL_FRAC_CFG_DATA                              0x0
 
     * Fractional control for the PLL
-    * (OFFSET, MASK, VALUE)      (0XFD1A0040, 0x8000FFFFU ,0x8000497FU)
+    * (OFFSET, MASK, VALUE)      (0XFD1A0040, 0x8000FFFFU ,0x80000000U)
     */
 	PSU_Mask_Write(CRF_APB_VPLL_FRAC_CFG_OFFSET,
-		0x8000FFFFU, 0x8000497FU);
+		0x8000FFFFU, 0x80000000U);
 /*##################################################################### */
 
 
@@ -1991,12 +1991,12 @@ unsigned long psu_ddr_init_data(void)
     * Interval between two MR4 reads, used to derate the timing parameters. Pr
     * esent only in designs configured to support LPDDR2/LPDDR3/LPDDR4. This r
     * egister must not be set to zero
-    *  PSU_DDRC_DERATEINT_MR4_READ_INTERVAL                        0x28b0aa
+    *  PSU_DDRC_DERATEINT_MR4_READ_INTERVAL                        0x284880
 
     * Temperature Derate Interval Register
-    * (OFFSET, MASK, VALUE)      (0XFD070024, 0xFFFFFFFFU ,0x0028B0AAU)
+    * (OFFSET, MASK, VALUE)      (0XFD070024, 0xFFFFFFFFU ,0x00284880U)
     */
-	PSU_Mask_Write(DDRC_DERATEINT_OFFSET, 0xFFFFFFFFU, 0x0028B0AAU);
+	PSU_Mask_Write(DDRC_DERATEINT_OFFSET, 0xFFFFFFFFU, 0x00284880U);
 /*##################################################################### */
 
     /*
@@ -2075,7 +2075,7 @@ unsigned long psu_ddr_init_data(void)
     * C specification is 500us. Unit: Multiples of 4096 clocks. Present only i
     * n designs configured to support mDDR, LPDDR2 or LPDDR3. FOR PERFORMANCE
     * ONLY.
-    *  PSU_DDRC_PWRTMG_T_DPD_X4096                                 0x43
+    *  PSU_DDRC_PWRTMG_T_DPD_X4096                                 0x42
 
     * After this many clocks of NOP or deselect the uMCTL2 automatically puts
     * the SDRAM into power-down. This must be enabled in the PWRCTL.powerdown_
@@ -2083,9 +2083,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDRC_PWRTMG_POWERDOWN_TO_X32                            0x10
 
     * Low Power Timing Register
-    * (OFFSET, MASK, VALUE)      (0XFD070034, 0x00FFFF1FU ,0x00404310U)
+    * (OFFSET, MASK, VALUE)      (0XFD070034, 0x00FFFF1FU ,0x00404210U)
     */
-	PSU_Mask_Write(DDRC_PWRTMG_OFFSET, 0x00FFFF1FU, 0x00404310U);
+	PSU_Mask_Write(DDRC_PWRTMG_OFFSET, 0x00FFFF1FU, 0x00404210U);
 /*##################################################################### */
 
     /*
@@ -2236,12 +2236,12 @@ unsigned long psu_ddr_init_data(void)
     * d the device density. The user should program the appropriate value from
     *  the spec based on the 'refresh_mode' and the device density that is use
     * d. Unit: Clocks.
-    *  PSU_DDRC_RFSHTMG_T_RFC_MIN                                  0x4b
+    *  PSU_DDRC_RFSHTMG_T_RFC_MIN                                  0x4a
 
     * Refresh Timing Register
-    * (OFFSET, MASK, VALUE)      (0XFD070064, 0x0FFF83FFU ,0x0008804BU)
+    * (OFFSET, MASK, VALUE)      (0XFD070064, 0x0FFF83FFU ,0x0008804AU)
     */
-	PSU_Mask_Write(DDRC_RFSHTMG_OFFSET, 0x0FFF83FFU, 0x0008804BU);
+	PSU_Mask_Write(DDRC_RFSHTMG_OFFSET, 0x0FFF83FFU, 0x0008804AU);
 /*##################################################################### */
 
     /*
@@ -2430,12 +2430,12 @@ unsigned long psu_ddr_init_data(void)
     * DR3: tINIT1 of 100 ns (min) LPDDR4: tINIT3 of 2 ms (min) For configurati
     * ons with MEMC_FREQ_RATIO=2, program this to JEDEC spec value divided by
     * 2, and round it up to next integer value.
-    *  PSU_DDRC_INIT0_PRE_CKE_X1024                                0x20a
+    *  PSU_DDRC_INIT0_PRE_CKE_X1024                                0x205
 
     * SDRAM Initialization Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD0700D0, 0xC3FF0FFFU ,0x0002020AU)
+    * (OFFSET, MASK, VALUE)      (0XFD0700D0, 0xC3FF0FFFU ,0x00020205U)
     */
-	PSU_Mask_Write(DDRC_INIT0_OFFSET, 0xC3FF0FFFU, 0x0002020AU);
+	PSU_Mask_Write(DDRC_INIT0_OFFSET, 0xC3FF0FFFU, 0x00020205U);
 /*##################################################################### */
 
     /*
@@ -2444,7 +2444,7 @@ unsigned long psu_ddr_init_data(void)
     * Number of cycles to assert SDRAM reset signal during init sequence. This
     *  is only present for designs supporting DDR3, DDR4 or LPDDR4 devices. Fo
     * r use with a DDR PHY, this should be set to a minimum of 1
-    *  PSU_DDRC_INIT1_DRAM_RSTN_X1024                              0x36
+    *  PSU_DDRC_INIT1_DRAM_RSTN_X1024                              0x35
 
     * Cycles to wait after completing the SDRAM initialization sequence before
     *  starting the dynamic scheduler. Unit: Counts of a global timer that pul
@@ -2458,9 +2458,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDRC_INIT1_PRE_OCD_X32                                  0x0
 
     * SDRAM Initialization Register 1
-    * (OFFSET, MASK, VALUE)      (0XFD0700D4, 0x01FF7F0FU ,0x00360000U)
+    * (OFFSET, MASK, VALUE)      (0XFD0700D4, 0x01FF7F0FU ,0x00350000U)
     */
-	PSU_Mask_Write(DDRC_INIT1_OFFSET, 0x01FF7F0FU, 0x00360000U);
+	PSU_Mask_Write(DDRC_INIT1_OFFSET, 0x01FF7F0FU, 0x00350000U);
 /*##################################################################### */
 
     /*
@@ -2488,7 +2488,7 @@ unsigned long psu_ddr_init_data(void)
     * re is ignored. The uMCTL2 sets this bit appropriately. DDR3/DDR4: Value
     * loaded into MR0 register. mDDR: Value to write to MR register. LPDDR2/LP
     * DDR3/LPDDR4 - Value to write to MR1 register
-    *  PSU_DDRC_INIT3_MR                                           0x24
+    *  PSU_DDRC_INIT3_MR                                           0x14
 
     * DDR2: Value to write to EMR register. Bits 9:7 are for OCD and the setti
     * ng in this register is ignored. The uMCTL2 sets those bits appropriately
@@ -2496,12 +2496,12 @@ unsigned long psu_ddr_init_data(void)
     * ation mode training is enabled, this bit is set appropriately by the uMC
     * TL2 during write leveling. mDDR: Value to write to EMR register. LPDDR2/
     * LPDDR3/LPDDR4 - Value to write to MR2 register
-    *  PSU_DDRC_INIT3_EMR                                          0x12
+    *  PSU_DDRC_INIT3_EMR                                          0x9
 
     * SDRAM Initialization Register 3
-    * (OFFSET, MASK, VALUE)      (0XFD0700DC, 0xFFFFFFFFU ,0x00240012U)
+    * (OFFSET, MASK, VALUE)      (0XFD0700DC, 0xFFFFFFFFU ,0x00140009U)
     */
-	PSU_Mask_Write(DDRC_INIT3_OFFSET, 0xFFFFFFFFU, 0x00240012U);
+	PSU_Mask_Write(DDRC_INIT3_OFFSET, 0xFFFFFFFFU, 0x00140009U);
 /*##################################################################### */
 
     /*
@@ -2726,7 +2726,7 @@ unsigned long psu_ddr_init_data(void)
     *  above value by 2. No rounding up. For configurations with MEMC_FREQ_RAT
     * IO=2, 2T mode or LPDDR4 mode, divide the above value by 2 and round it u
     * p to the next integer value.
-    *  PSU_DDRC_DRAMTMG0_WR2PRE                                    0xe
+    *  PSU_DDRC_DRAMTMG0_WR2PRE                                    0xd
 
     * tFAW Valid only when 8 or more banks(or banks x bank groups) are present
     * . In 8-bank design, at most 4 banks must be activated in a rolling windo
@@ -2751,9 +2751,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDRC_DRAMTMG0_T_RAS_MIN                                 0xc
 
     * SDRAM Timing Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD070100, 0x7F3F7F3FU ,0x0E0B010CU)
+    * (OFFSET, MASK, VALUE)      (0XFD070100, 0x7F3F7F3FU ,0x0D0B010CU)
     */
-	PSU_Mask_Write(DDRC_DRAMTMG0_OFFSET, 0x7F3F7F3FU, 0x0E0B010CU);
+	PSU_Mask_Write(DDRC_DRAMTMG0_OFFSET, 0x7F3F7F3FU, 0x0D0B010CU);
 /*##################################################################### */
 
     /*
@@ -2800,7 +2800,7 @@ unsigned long psu_ddr_init_data(void)
     * egister field is not required for DDR2 and DDR3 (except if MEMC_TRAINING
     *  is set), as the DFI read and write latencies defined in DFITMG0 and DFI
     * TMG1 are sufficient for those protocols Unit: clocks
-    *  PSU_DDRC_DRAMTMG2_WRITE_LATENCY                             0x4
+    *  PSU_DDRC_DRAMTMG2_WRITE_LATENCY                             0x3
 
     * Set to RL Time from read command to read data on SDRAM interface. This m
     * ust be set to RL. Note that, depending on the PHY, if using RDIMM, it ma
@@ -2811,7 +2811,7 @@ unsigned long psu_ddr_init_data(void)
     * DR3 (except if MEMC_TRAINING is set), as the DFI read and write latencie
     * s defined in DFITMG0 and DFITMG1 are sufficient for those protocols Unit
     * : clocks
-    *  PSU_DDRC_DRAMTMG2_READ_LATENCY                              0x7
+    *  PSU_DDRC_DRAMTMG2_READ_LATENCY                              0x5
 
     * DDR2/3/mDDR: RL + BL/2 + 2 - WL DDR4: RL + BL/2 + 1 + WR_PREAMBLE - WL L
     * PDDR2/LPDDR3: RL + BL/2 + RU(tDQSCKmax/tCK) + 1 - WL LPDDR4(DQ ODT is Di
@@ -2827,7 +2827,7 @@ unsigned long psu_ddr_init_data(void)
     * erating is enabled (DERATEEN.derate_enable=1), derated tDQSCKmax should
     * be used. For configurations with MEMC_FREQ_RATIO=2, divide the value cal
     * culated using the above equation by 2, and round it up to next integer.
-    *  PSU_DDRC_DRAMTMG2_RD2WR                                     0x16
+    *  PSU_DDRC_DRAMTMG2_RD2WR                                     0x13
 
     * DDR4: CWL + PL + BL/2 + tWTR_L Others: CWL + BL/2 + tWTR In DDR4, minimu
     * m time from write command to read command for same bank group. In others
@@ -2842,12 +2842,12 @@ unsigned long psu_ddr_init_data(void)
     * PDDR3/LPDDR4 operation. For configurations with MEMC_FREQ_RATIO=2, divid
     * e the value calculated using the above equation by 2, and round it up to
     *  next integer.
-    *  PSU_DDRC_DRAMTMG2_WR2RD                                     0xd
+    *  PSU_DDRC_DRAMTMG2_WR2RD                                     0xc
 
     * SDRAM Timing Register 2
-    * (OFFSET, MASK, VALUE)      (0XFD070108, 0x3F3F3F3FU ,0x0407160DU)
+    * (OFFSET, MASK, VALUE)      (0XFD070108, 0x3F3F3F3FU ,0x0305130CU)
     */
-	PSU_Mask_Write(DDRC_DRAMTMG2_OFFSET, 0x3F3F3F3FU, 0x0407160DU);
+	PSU_Mask_Write(DDRC_DRAMTMG2_OFFSET, 0x3F3F3F3FU, 0x0305130CU);
 /*##################################################################### */
 
     /*
@@ -3191,7 +3191,7 @@ unsigned long psu_ddr_init_data(void)
     * e next integer value. LPDDR4: program this to tZQCAL/2 and round it up t
     * o the next integer value. Unit: Clock cycles. This is only present for d
     * esigns supporting DDR3/DDR4 or LPDDR2/LPDDR3/LPDDR4 devices.
-    *  PSU_DDRC_ZQCTL0_T_ZQ_LONG_NOP                               0x10b
+    *  PSU_DDRC_ZQCTL0_T_ZQ_LONG_NOP                               0x108
 
     * tZQCS for DDR3/DD4/LPDDR2/LPDDR3, tZQLAT for LPDDR4: Number of cycles of
     *  NOP required after a ZQCS (ZQ calibration short)/MPC(ZQ Latch) command
@@ -3202,9 +3202,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDRC_ZQCTL0_T_ZQ_SHORT_NOP                              0x8
 
     * ZQ Control Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD070180, 0xF7FF03FFU ,0x810B0008U)
+    * (OFFSET, MASK, VALUE)      (0XFD070180, 0xF7FF03FFU ,0x81080008U)
     */
-	PSU_Mask_Write(DDRC_ZQCTL0_OFFSET, 0xF7FF03FFU, 0x810B0008U);
+	PSU_Mask_Write(DDRC_ZQCTL0_OFFSET, 0xF7FF03FFU, 0x81080008U);
 /*##################################################################### */
 
     /*
@@ -3222,12 +3222,12 @@ unsigned long psu_ddr_init_data(void)
     * 4 devices. Meaningless, if ZQCTL0.dis_auto_zq=1. Unit: 1024 clock cycles
     * . This is only present for designs supporting DDR3/DDR4 or LPDDR2/LPDDR3
     * /LPDDR4 devices.
-    *  PSU_DDRC_ZQCTL1_T_ZQ_SHORT_INTERVAL_X1024                   0x32dcd
+    *  PSU_DDRC_ZQCTL1_T_ZQ_SHORT_INTERVAL_X1024                   0x325aa
 
     * ZQ Control Register 1
-    * (OFFSET, MASK, VALUE)      (0XFD070184, 0x3FFFFFFFU ,0x00E32DCDU)
+    * (OFFSET, MASK, VALUE)      (0XFD070184, 0x3FFFFFFFU ,0x00E325AAU)
     */
-	PSU_Mask_Write(DDRC_ZQCTL1_OFFSET, 0x3FFFFFFFU, 0x00E32DCDU);
+	PSU_Mask_Write(DDRC_ZQCTL1_OFFSET, 0x3FFFFFFFU, 0x00E325AAU);
 /*##################################################################### */
 
     /*
@@ -3255,7 +3255,7 @@ unsigned long psu_ddr_init_data(void)
     * depending on the PHY, if using RDIMM, it may be necessary to use the val
     * ue (CL + 1) in the calculation of trddata_en. This is to compensate for
     * the extra cycle of latency through the RDIMM. Unit: Clocks
-    *  PSU_DDRC_DFITMG0_DFI_T_RDDATA_EN                            0xb
+    *  PSU_DDRC_DFITMG0_DFI_T_RDDATA_EN                            0x7
 
     * Defines whether dfi_wrdata_en/dfi_wrdata/dfi_wrdata_mask is generated us
     * ing HDR or SDR values Selects whether value in DFITMG0.dfi_tphy_wrlat is
@@ -3278,12 +3278,12 @@ unsigned long psu_ddr_init_data(void)
     * n the PHY, if using RDIMM, it may be necessary to use the value (CL + 1)
     *  in the calculation of tphy_wrlat. This is to compensate for the extra c
     * ycle of latency through the RDIMM.
-    *  PSU_DDRC_DFITMG0_DFI_TPHY_WRLAT                             0x6
+    *  PSU_DDRC_DFITMG0_DFI_TPHY_WRLAT                             0x4
 
     * DFI Timing Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD070190, 0x1FBFBF3FU ,0x048B8206U)
+    * (OFFSET, MASK, VALUE)      (0XFD070190, 0x1FBFBF3FU ,0x04878204U)
     */
-	PSU_Mask_Write(DDRC_DFITMG0_OFFSET, 0x1FBFBF3FU, 0x048B8206U);
+	PSU_Mask_Write(DDRC_DFITMG0_OFFSET, 0x1FBFBF3FU, 0x04878204U);
 /*##################################################################### */
 
     /*
@@ -3496,18 +3496,18 @@ unsigned long psu_ddr_init_data(void)
     *  interface and when the associated dfi_rddata_cs signal is asserted. Thi
     * s corresponds to the DFI timing parameter tphy_rdcslat. Refer to PHY spe
     * cification for correct value.
-    *  PSU_DDRC_DFITMG2_DFI_TPHY_RDCSLAT                           0x9
+    *  PSU_DDRC_DFITMG2_DFI_TPHY_RDCSLAT                           0x5
 
     * Number of clocks between when a write command is sent on the DFI control
     *  interface and when the associated dfi_wrdata_cs signal is asserted. Thi
     * s corresponds to the DFI timing parameter tphy_wrcslat. Refer to PHY spe
     * cification for correct value.
-    *  PSU_DDRC_DFITMG2_DFI_TPHY_WRCSLAT                           0x4
+    *  PSU_DDRC_DFITMG2_DFI_TPHY_WRCSLAT                           0x2
 
     * DFI Timing Register 2
-    * (OFFSET, MASK, VALUE)      (0XFD0701B4, 0x00003F3FU ,0x00000904U)
+    * (OFFSET, MASK, VALUE)      (0XFD0701B4, 0x00003F3FU ,0x00000502U)
     */
-	PSU_Mask_Write(DDRC_DFITMG2_OFFSET, 0x00003F3FU, 0x00000904U);
+	PSU_Mask_Write(DDRC_DFITMG2_OFFSET, 0x00003F3FU, 0x00000502U);
 /*##################################################################### */
 
     /*
@@ -5620,12 +5620,12 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_PGCR2_PLLFSMBYP                                 0x0
 
     * Refresh Period
-    *  PSU_DDR_PHY_PGCR2_TREFPRD                                   0xc58
+    *  PSU_DDR_PHY_PGCR2_TREFPRD                                   0xc30
 
     * PHY General Configuration Register 2
-    * (OFFSET, MASK, VALUE)      (0XFD080018, 0xFFFFFFFFU ,0x00F00C58U)
+    * (OFFSET, MASK, VALUE)      (0XFD080018, 0xFFFFFFFFU ,0x00F00C30U)
     */
-	PSU_Mask_Write(DDR_PHY_PGCR2_OFFSET, 0xFFFFFFFFU, 0x00F00C58U);
+	PSU_Mask_Write(DDR_PHY_PGCR2_OFFSET, 0xFFFFFFFFU, 0x00F00C30U);
 /*##################################################################### */
 
     /*
@@ -5710,36 +5710,36 @@ unsigned long psu_ddr_init_data(void)
     * Register : PTR0 @ 0XFD080040
 
     * PLL Power-Down Time
-    *  PSU_DDR_PHY_PTR0_TPLLPD                                     0x10b
+    *  PSU_DDR_PHY_PTR0_TPLLPD                                     0x108
 
     * PLL Gear Shift Time
-    *  PSU_DDR_PHY_PTR0_TPLLGS                                     0x42b
+    *  PSU_DDR_PHY_PTR0_TPLLGS                                     0x420
 
     * PHY Reset Time
     *  PSU_DDR_PHY_PTR0_TPHYRST                                    0x10
 
     * PHY Timing Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD080040, 0xFFFFFFFFU ,0x21610AD0U)
+    * (OFFSET, MASK, VALUE)      (0XFD080040, 0xFFFFFFFFU ,0x21010810U)
     */
-	PSU_Mask_Write(DDR_PHY_PTR0_OFFSET, 0xFFFFFFFFU, 0x21610AD0U);
+	PSU_Mask_Write(DDR_PHY_PTR0_OFFSET, 0xFFFFFFFFU, 0x21010810U);
 /*##################################################################### */
 
     /*
     * Register : PTR1 @ 0XFD080044
 
     * PLL Lock Time
-    *  PSU_DDR_PHY_PTR1_TPLLLOCK                                   0x682b
+    *  PSU_DDR_PHY_PTR1_TPLLLOCK                                   0x6720
 
     * Reserved. Returns zeroes on reads.
     *  PSU_DDR_PHY_PTR1_RESERVED_15_13                             0x0
 
     * PLL Reset Time
-    *  PSU_DDR_PHY_PTR1_TPLLRST                                    0x960
+    *  PSU_DDR_PHY_PTR1_TPLLRST                                    0x948
 
     * PHY Timing Register 1
-    * (OFFSET, MASK, VALUE)      (0XFD080044, 0xFFFFFFFFU ,0x682B0960U)
+    * (OFFSET, MASK, VALUE)      (0XFD080044, 0xFFFFFFFFU ,0x67200948U)
     */
-	PSU_Mask_Write(DDR_PHY_PTR1_OFFSET, 0xFFFFFFFFU, 0x682B0960U);
+	PSU_Mask_Write(DDR_PHY_PTR1_OFFSET, 0xFFFFFFFFU, 0x67200948U);
 /*##################################################################### */
 
     /*
@@ -5937,7 +5937,7 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR0_RESERVED_31_29                            0x0
 
     * Activate to activate command delay (different banks)
-    *  PSU_DDR_PHY_DTPR0_TRRD                                      0x7
+    *  PSU_DDR_PHY_DTPR0_TRRD                                      0x6
 
     * Reserved. Return zeroes on reads.
     *  PSU_DDR_PHY_DTPR0_RESERVED_23                               0x0
@@ -5958,9 +5958,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR0_TRTP                                      0x8
 
     * DRAM Timing Parameters Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD080110, 0xFFFFFFFFU ,0x07180D08U)
+    * (OFFSET, MASK, VALUE)      (0XFD080110, 0xFFFFFFFFU ,0x06180D08U)
     */
-	PSU_Mask_Write(DDR_PHY_DTPR0_OFFSET, 0xFFFFFFFFU, 0x07180D08U);
+	PSU_Mask_Write(DDR_PHY_DTPR0_OFFSET, 0xFFFFFFFFU, 0x06180D08U);
 /*##################################################################### */
 
     /*
@@ -6022,12 +6022,12 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR2_RESERVED_15_10                            0x0
 
     * Self refresh exit delay
-    *  PSU_DDR_PHY_DTPR2_TXS                                       0x9a
+    *  PSU_DDR_PHY_DTPR2_TXS                                       0x98
 
     * DRAM Timing Parameters Register 2
-    * (OFFSET, MASK, VALUE)      (0XFD080118, 0xFFFFFFFFU ,0x000F009AU)
+    * (OFFSET, MASK, VALUE)      (0XFD080118, 0xFFFFFFFFU ,0x000F0098U)
     */
-	PSU_Mask_Write(DDR_PHY_DTPR2_OFFSET, 0xFFFFFFFFU, 0x000F009AU);
+	PSU_Mask_Write(DDR_PHY_DTPR2_OFFSET, 0xFFFFFFFFU, 0x000F0098U);
 /*##################################################################### */
 
     /*
@@ -6073,7 +6073,7 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR4_RESERVED_27_26                            0x0
 
     * Refresh-to-Refresh
-    *  PSU_DDR_PHY_DTPR4_TRFC                                      0x96
+    *  PSU_DDR_PHY_DTPR4_TRFC                                      0x94
 
     * Reserved. Return zeroes on reads.
     *  PSU_DDR_PHY_DTPR4_RESERVED_15_14                            0x0
@@ -6088,9 +6088,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR4_TXP                                       0x8
 
     * DRAM Timing Parameters Register 4
-    * (OFFSET, MASK, VALUE)      (0XFD080120, 0xFFFFFFFFU ,0x00962B08U)
+    * (OFFSET, MASK, VALUE)      (0XFD080120, 0xFFFFFFFFU ,0x00942B08U)
     */
-	PSU_Mask_Write(DDR_PHY_DTPR4_OFFSET, 0xFFFFFFFFU, 0x00962B08U);
+	PSU_Mask_Write(DDR_PHY_DTPR4_OFFSET, 0xFFFFFFFFU, 0x00942B08U);
 /*##################################################################### */
 
     /*
@@ -6133,18 +6133,18 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_DTPR6_RESERVED_29_14                            0x0
 
     * Write Latency
-    *  PSU_DDR_PHY_DTPR6_PUBWL                                     0x8
+    *  PSU_DDR_PHY_DTPR6_PUBWL                                     0x6
 
     * Reserved. Return zeroes on reads.
     *  PSU_DDR_PHY_DTPR6_RESERVED_7_6                              0x0
 
     * Read Latency
-    *  PSU_DDR_PHY_DTPR6_PUBRL                                     0xe
+    *  PSU_DDR_PHY_DTPR6_PUBRL                                     0xa
 
     * DRAM Timing Parameters Register 6
-    * (OFFSET, MASK, VALUE)      (0XFD080128, 0xFFFFFFFFU ,0x0000080EU)
+    * (OFFSET, MASK, VALUE)      (0XFD080128, 0xFFFFFFFFU ,0x0000060AU)
     */
-	PSU_Mask_Write(DDR_PHY_DTPR6_OFFSET, 0xFFFFFFFFU, 0x0000080EU);
+	PSU_Mask_Write(DDR_PHY_DTPR6_OFFSET, 0xFFFFFFFFU, 0x0000060AU);
 /*##################################################################### */
 
     /*
@@ -6361,7 +6361,7 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_MR1_RDPST                                       0x0
 
     * Write-recovery for auto-precharge command
-    *  PSU_DDR_PHY_MR1_NWR                                         0x2
+    *  PSU_DDR_PHY_MR1_NWR                                         0x1
 
     * Read Preamble Length
     *  PSU_DDR_PHY_MR1_RDPRE                                       0x0
@@ -6373,9 +6373,9 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_MR1_BL                                          0x0
 
     * LPDDR4 Mode Register 1
-    * (OFFSET, MASK, VALUE)      (0XFD080184, 0xFFFFFFFFU ,0x00000024U)
+    * (OFFSET, MASK, VALUE)      (0XFD080184, 0xFFFFFFFFU ,0x00000014U)
     */
-	PSU_Mask_Write(DDR_PHY_MR1_OFFSET, 0xFFFFFFFFU, 0x00000024U);
+	PSU_Mask_Write(DDR_PHY_MR1_OFFSET, 0xFFFFFFFFU, 0x00000014U);
 /*##################################################################### */
 
     /*
@@ -6391,15 +6391,15 @@ unsigned long psu_ddr_init_data(void)
     *  PSU_DDR_PHY_MR2_WLS                                         0x0
 
     * Write Latency
-    *  PSU_DDR_PHY_MR2_WL                                          0x2
+    *  PSU_DDR_PHY_MR2_WL                                          0x1
 
     * Read Latency
-    *  PSU_DDR_PHY_MR2_RL                                          0x2
+    *  PSU_DDR_PHY_MR2_RL                                          0x1
 
     * LPDDR4 Mode Register 2
-    * (OFFSET, MASK, VALUE)      (0XFD080188, 0xFFFFFFFFU ,0x00000012U)
+    * (OFFSET, MASK, VALUE)      (0XFD080188, 0xFFFFFFFFU ,0x00000009U)
     */
-	PSU_Mask_Write(DDR_PHY_MR2_OFFSET, 0xFFFFFFFFU, 0x00000012U);
+	PSU_Mask_Write(DDR_PHY_MR2_OFFSET, 0xFFFFFFFFU, 0x00000009U);
 /*##################################################################### */
 
     /*
@@ -16577,13 +16577,13 @@ unsigned long psu_peripherals_init_data(void)
     * Register : Baud_rate_divider_reg0 @ 0XFF000034
 
     * Baud rate divider value: 0 - 3: ignored 4 - 255: Baud rate
-    *  PSU_UART0_BAUD_RATE_DIVIDER_REG0_BDIV                       0x6
+    *  PSU_UART0_BAUD_RATE_DIVIDER_REG0_BDIV                       0x5
 
     * Baud Rate Divider Register
-    * (OFFSET, MASK, VALUE)      (0XFF000034, 0x000000FFU ,0x00000006U)
+    * (OFFSET, MASK, VALUE)      (0XFF000034, 0x000000FFU ,0x00000005U)
     */
 	PSU_Mask_Write(UART0_BAUD_RATE_DIVIDER_REG0_OFFSET,
-		0x000000FFU, 0x00000006U);
+		0x000000FFU, 0x00000005U);
 /*##################################################################### */
 
     /*
@@ -16591,13 +16591,13 @@ unsigned long psu_peripherals_init_data(void)
 
     * Baud Rate Clock Divisor Value: 0: Disables baud_sample 1: Clock divisor
     * bypass (baud_sample = sel_clk) 2 - 65535: baud_sample
-    *  PSU_UART0_BAUD_RATE_GEN_REG0_CD                             0x7c
+    *  PSU_UART0_BAUD_RATE_GEN_REG0_CD                             0x8f
 
     * Baud Rate Generator Register.
-    * (OFFSET, MASK, VALUE)      (0XFF000018, 0x0000FFFFU ,0x0000007CU)
+    * (OFFSET, MASK, VALUE)      (0XFF000018, 0x0000FFFFU ,0x0000008FU)
     */
 	PSU_Mask_Write(UART0_BAUD_RATE_GEN_REG0_OFFSET,
-		0x0000FFFFU, 0x0000007CU);
+		0x0000FFFFU, 0x0000008FU);
 /*##################################################################### */
 
     /*
@@ -16685,13 +16685,13 @@ unsigned long psu_peripherals_init_data(void)
     * Register : Baud_rate_divider_reg0 @ 0XFF010034
 
     * Baud rate divider value: 0 - 3: ignored 4 - 255: Baud rate
-    *  PSU_UART1_BAUD_RATE_DIVIDER_REG0_BDIV                       0x6
+    *  PSU_UART1_BAUD_RATE_DIVIDER_REG0_BDIV                       0x5
 
     * Baud Rate Divider Register
-    * (OFFSET, MASK, VALUE)      (0XFF010034, 0x000000FFU ,0x00000006U)
+    * (OFFSET, MASK, VALUE)      (0XFF010034, 0x000000FFU ,0x00000005U)
     */
 	PSU_Mask_Write(UART1_BAUD_RATE_DIVIDER_REG0_OFFSET,
-		0x000000FFU, 0x00000006U);
+		0x000000FFU, 0x00000005U);
 /*##################################################################### */
 
     /*
@@ -16699,13 +16699,13 @@ unsigned long psu_peripherals_init_data(void)
 
     * Baud Rate Clock Divisor Value: 0: Disables baud_sample 1: Clock divisor
     * bypass (baud_sample = sel_clk) 2 - 65535: baud_sample
-    *  PSU_UART1_BAUD_RATE_GEN_REG0_CD                             0x7c
+    *  PSU_UART1_BAUD_RATE_GEN_REG0_CD                             0x8f
 
     * Baud Rate Generator Register.
-    * (OFFSET, MASK, VALUE)      (0XFF010018, 0x0000FFFFU ,0x0000007CU)
+    * (OFFSET, MASK, VALUE)      (0XFF010018, 0x0000FFFFU ,0x0000008FU)
     */
 	PSU_Mask_Write(UART1_BAUD_RATE_GEN_REG0_OFFSET,
-		0x0000FFFFU, 0x0000007CU);
+		0x0000FFFFU, 0x0000008FU);
 /*##################################################################### */
 
     /*
@@ -16925,16 +16925,16 @@ unsigned long psu_peripherals_init_data(void)
 
     * Frequency in number of ticks per second. Valid range from 10 MHz to 100
     * MHz.
-    *  PSU_IOU_SCNTRS_BASE_FREQUENCY_ID_REGISTER_FREQ              0x5f5e100
+    *  PSU_IOU_SCNTRS_BASE_FREQUENCY_ID_REGISTER_FREQ              0x5e69ec0
 
     * Program this register to match the clock frequency of the timestamp gene
     * rator, in ticks per second. For example, for a 50 MHz clock, program 0x0
     * 2FAF080. This register is not accessible to the read-only programming in
     * terface.
-    * (OFFSET, MASK, VALUE)      (0XFF260020, 0xFFFFFFFFU ,0x05F5E100U)
+    * (OFFSET, MASK, VALUE)      (0XFF260020, 0xFFFFFFFFU ,0x05E69EC0U)
     */
 	PSU_Mask_Write(IOU_SCNTRS_BASE_FREQUENCY_ID_REGISTER_OFFSET,
-		0xFFFFFFFFU, 0x05F5E100U);
+		0xFFFFFFFFU, 0x05E69EC0U);
 /*##################################################################### */
 
     /*
@@ -21534,7 +21534,7 @@ unsigned long psu_ddr_phybringup_data(void)
 	if(regval != 0) {
 		return(0);
 	}
-	Xil_Out32(0xFD070180U, 0x010B0008U);
+	Xil_Out32(0xFD070180U, 0x01080008U);
 	Xil_Out32(0xFD070060U, 0x00000000U);
 	prog_reg(0xFD080014U, 0x00000040U, 0x00000006U, 0x00000000U);
 

@@ -82,6 +82,8 @@ int main()
 
 	XImage_processing_Set_in_r(&XmageProcessor, input);
 	XImage_processing_Set_out_r(&XmageProcessor, output);
+	int value=XImage_processing_Get_in_r(&XmageProcessor);
+	xil_printf("Address value %x \r\n",value);
 	XImage_processing_Start(&XmageProcessor);
 
 	while(!XImage_processing_IsDone(&XmageProcessor)){}
