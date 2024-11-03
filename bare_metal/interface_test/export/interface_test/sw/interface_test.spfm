@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="interface_test"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+interface_test
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="interface_test">
+        <sdx:configuration sdx:name="interface_test"
+                           sdx:displayName="interface_test"
+                           sdx:defaultProcessorGroup="standalone_psu_cortexa53_0"
+                           sdx:runtimes="cpp">
+            <sdx:description>interface_test</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="interface_test/boot/interface_test.bif"
+                            sdx:readme="interface_test/boot/generic.readme"
+                            sdx:qemuArguments="interface_test/qemu/pmu_args.txt:interface_test/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_psu_cortexa53_0"
+                            sdx:bif="interface_test/boot/interface_test.bif"
+                            sdx:readme="interface_test/boot/generic.readme"
+                            sdx:qemuArguments="interface_test/standalone_psu_cortexa53_0/qemu/pmu_args.txt:interface_test/standalone_psu_cortexa53_0/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_psu_cortexa53_0"
+                                sdx:displayName="standalone_psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="interface_test/standalone_psu_cortexa53_0/bsplib/lib"
+                        sdx:bspIncludePaths="interface_test/standalone_psu_cortexa53_0/bspinclude/include"
+                        sdx:bspConfig="interface_test/standalone_psu_cortexa53_0/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>
