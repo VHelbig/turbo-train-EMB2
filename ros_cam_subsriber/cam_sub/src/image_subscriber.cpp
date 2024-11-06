@@ -33,37 +33,15 @@ private:
 		cv::Mat img_g;
 		cv::cvtColor(img, img, cv::COLOR_BGR2RGB);
 		cv::cvtColor(img, img_g, cv::COLOR_RGB2GRAY);
-		// RCLCPP_INFO(this->get_logger(), "Image converted to gray!");
-
-		// cv::imshow("Image", img_g);
-		//  cv::imshow("Original", img);
-
-		// printing the number of rows and columns
-		// RCLCPP_INFO(this->get_logger(), "Rows: %d, Cols: %d", rows, cols);
-		// printing the row imagedata of the image in the console as 8 bit integers
-
-		// unsigned char *input = (unsigned char *)(img_g.data);
-		//std::vector<int> image_data;
+		
 		int iTop = img_g.rows;
 		int jTop = img_g.cols;
-		// RCLCPP_INFO(this->get_logger(), "iTop is %d", iTop);
-		// RCLCPP_INFO(this->get_logger(), "jTop is %d", jTop);
-
-
-		//unsigned long int imageData[921600];
-		//RCLCPP_INFO(this->get_logger(), "imageData size is %d", sizeof(imageData));
-
-		//std:cout << "Image Data: " << image_data.size() << std::endl;
-		// int b;
-		//int temp = 0;
-		//std::cout << "Image Data: " << img_g.rows << " " << img_g.cols << std::endl;
-		// RCLCPP_INFO(this->get_logger(), "Ready for for loop!");
+		
 
 		int64_t count = 0;	
 		for (int i = 0; i < iTop; i++)
 		{
-
-					
+		
 			for (int j = 0; j < jTop; j++)
 			{
 				// b = input[img_g.step * j + i];
@@ -71,11 +49,7 @@ private:
 				RCLCPP_INFO(this->get_logger(), "Image Data: %d", pixel_value);	
 
 				// send to the common ram
-				//RCLCPP_INFO(this->get_logger(), "Image Data: %d", b);			
-				//std::cout << j << " " << i << std::endl;
-				//image_data.push_back(b);
-				// imageData[temp] = b;
-				// temp++;
+				
 				// count ++;
 
 			}
@@ -83,11 +57,6 @@ private:
 
 		RCLCPP_INFO(this->get_logger(), "DOOOOOOOONEEEEE!");
 
-		RCLCPP_INFO(this->get_logger(), "Image size: %d", count);
-
-		// RCLCPP_INFO(this->get_logger(), "Image Data: ", *input);
-		//std::cout << "Image Data: " << sizeof(imageData) << std::endl;
-		//RCLCPP_INFO(this->get_logger(), "Successfully loaded image");
 		//cv::waitKey(5000);
 	}
 };
