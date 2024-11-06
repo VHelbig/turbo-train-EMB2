@@ -1,0 +1,16 @@
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/lib/cam_sub/image_subscriber
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/ament_index/resource_index/package_run_dependencies/cam_sub
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/ament_index/resource_index/parent_prefix_path/cam_sub
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/environment/ament_prefix_path.sh
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/environment/ament_prefix_path.dsv
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/environment/path.sh
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/environment/path.dsv
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/local_setup.bash
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/local_setup.sh
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/local_setup.zsh
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/local_setup.dsv
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/package.dsv
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/ament_index/resource_index/packages/cam_sub
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/cmake/cam_subConfig.cmake
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/cmake/cam_subConfig-version.cmake
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/install/cam_sub/share/cam_sub/package.xml

@@ -1,0 +1,10 @@
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/install/strip.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/install/local.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/install.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/list_install_components.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/rebuild_cache.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/image_subscriber.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/edit_cache.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/test.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/cam_sub_uninstall.dir
+/home/mazils/Desktop/turbo-train-EMB2/ros_cam_subsriber/build/cam_sub/CMakeFiles/uninstall.dir
