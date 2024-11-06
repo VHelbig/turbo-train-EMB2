@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="image_processing" name="Assigment2">
+<project xmlns="com.autoesl.autopilot.project" name="Assigment2" top="image_processing">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

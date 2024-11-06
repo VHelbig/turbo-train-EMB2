@@ -5,6 +5,11 @@
                 <option name="name" value="image_processing"/>
             </pragma>
         </directive>
+        <directive functionName="image_processing" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="image_processing"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

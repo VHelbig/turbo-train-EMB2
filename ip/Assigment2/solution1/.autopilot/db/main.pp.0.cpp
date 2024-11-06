@@ -375,18 +375,27 @@ typedef __uintmax_t uintmax_t;
 
 
 
+
 __attribute__((sdx_kernel("image_processing", 0))) void image_processing(volatile int in[1000*3], volatile int out[1000*3]) {_ssdm_SpecArrayDimSize(in, 3000);_ssdm_SpecArrayDimSize(out, 3000);
 #pragma HLS TOP name=image_processing
-# 6 "main.cpp"
+# 7 "main.cpp"
 
 #pragma HLS INTERFACE s_axilite port=return
-#pragma HLS INTERFACE m_axi port=in offset=slave bundle=AXI_DATA
-#pragma HLS INTERFACE m_axi port=out offset=slave bundle=AXI_DATA
+#pragma HLS INTERFACE m_axi port=in offset=slave bundle=AXI_DATA max_widen_bitwidth=10
+#pragma HLS INTERFACE m_axi port=out offset=slave bundle=AXI_DATA max_widen_bitwidth=10
+
+ int data_segment[100];
+ int data_processed[100];
+ int array_offset = 0;
 
 
- VITIS_LOOP_12_1: for (int i = 0; i < 1000*3; i++) {
-
-  out[i]=in[i];
+ loop2:for(int i = 0; i<1000*3;i++){
+#pragma HLS UNROLL factor=10
+ if(in[i] > 50){
+   out[i] = 255;
+  }else{
+   out[i] = 0;
+  }
  }
-
+# 49 "main.cpp"
 }

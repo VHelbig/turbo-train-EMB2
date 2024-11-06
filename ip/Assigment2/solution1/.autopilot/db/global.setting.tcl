@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xczu3eg:-sbva484:-1-i
 set SourceFiles {sc {} c ../../main.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/solution1/solution1.directive
+set DirectiveFile /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/solution1/solution1.directive
 set TBFiles {verilog ../../main_tb.cpp bc ../../main_tb.cpp vhdl ../../main_tb.cpp sc ../../main_tb.cpp cas ../../main_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

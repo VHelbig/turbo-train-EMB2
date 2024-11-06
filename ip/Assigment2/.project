@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/.apc/.src</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/.apc/.tb</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/solution1/.tcls</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/main.cpp</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/main.cpp</location>
 		</link>
 		<link>
 			<name>testbench/main_tb.cpp</name>
 			<type>1</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/main_tb.cpp</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/main_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/solution1/solution1.directive</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/solution1/directives.tcl</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/vincent/Documents/Vitis_HLS_Projects/Assignement2/Assigment2/solution1/script.tcl</location>
+			<location>/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/Assigment2/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
