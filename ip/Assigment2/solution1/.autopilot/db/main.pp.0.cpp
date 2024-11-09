@@ -381,21 +381,20 @@ __attribute__((sdx_kernel("image_processing", 0))) void image_processing(volatil
 # 7 "main.cpp"
 
 #pragma HLS INTERFACE s_axilite port=return
-#pragma HLS INTERFACE m_axi port=in offset=slave bundle=AXI_DATA max_widen_bitwidth=10
-#pragma HLS INTERFACE m_axi port=out offset=slave bundle=AXI_DATA max_widen_bitwidth=10
+#pragma HLS INTERFACE m_axi port=in offset=slave bundle=AXI_DATA
+#pragma HLS INTERFACE m_axi port=out offset=slave bundle=AXI_DATA
 
  int data_segment[100];
  int data_processed[100];
  int array_offset = 0;
 
 
- loop2:for(int i = 0; i<1000*3;i++){
+ loop:for(int i = 0; i<1000*3;i++){
 #pragma HLS UNROLL factor=10
- if(in[i] > 50){
+ if(in[i] > 127){
    out[i] = 255;
   }else{
    out[i] = 0;
   }
  }
-# 49 "main.cpp"
 }

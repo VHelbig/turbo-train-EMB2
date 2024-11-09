@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'image_processing'
 ================================================================
 + General Information: 
-    * Date:           Tue Nov  5 15:50:00 2024
+    * Date:           Sat Nov  9 14:51:14 2024
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        Assigment2
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |       Modules      |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |    |           |           |     |
     |       & Loops      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
     +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
-    |+ image_processing  |  Timing|   0.00|     3146|  3.146e+04|         -|     3147|     -|        no|  2 (~0%)|   -|  2689 (1%)|  3309 (4%)|    -|
-    | o loop2            |      II|  -7.30|     3144|  3.144e+04|       155|       10|   300|       yes|        -|   -|          -|          -|    -|
+    |+ image_processing  |  Timing|   0.00|     3146|  3.146e+04|         -|     3147|     -|        no|  2 (~0%)|   -|  2619 (1%)|  3269 (4%)|    -|
+    | o loop             |      II|  -7.30|     3144|  3.144e+04|       155|       10|   300|       yes|        -|   -|          -|          -|    -|
     +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
 

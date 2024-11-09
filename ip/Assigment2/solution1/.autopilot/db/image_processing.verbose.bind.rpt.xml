@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'image_processing'" level="0">
-<item name = "Date">Tue Nov  5 15:49:59 2024
+<item name = "Date">Sat Nov  9 14:51:12 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">Assigment2</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop2">3144, 3144, 155, 10, 1, 300, yes</column>
+<column name="- loop">3144, 3144, 155, 10, 1, 300, yes</column>
 </table>
 </item>
 </section>

@@ -26,14 +26,14 @@
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<loop2>
-<Name>loop2</Name>
+<loop>
+<Name>loop</Name>
 <TripCount>300</TripCount>
 <Latency>3144</Latency>
 <AbsoluteTimeLatency>31.440 us</AbsoluteTimeLatency>
 <PipelineII>10</PipelineII>
 <PipelineDepth>155</PipelineDepth>
-</loop2>
+</loop>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -41,10 +41,10 @@
 <BRAM_18K>2</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<FF>2689</FF>
+<FF>2619</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>3309</LUT>
+<LUT>3269</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
 <UTIL_LUT>4</UTIL_LUT>
 <DSP>0</DSP>

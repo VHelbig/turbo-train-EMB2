@@ -820,7 +820,7 @@
           "Estimate": "7.300"
         },
         "Loops": [{
-            "Name": "loop2",
+            "Name": "loop",
             "TripCount": "300",
             "Latency": "3144",
             "PipelineII": "10",
@@ -830,10 +830,10 @@
           "BRAM_18K": "2",
           "AVAIL_BRAM": "432",
           "UTIL_BRAM": "~0",
-          "FF": "2689",
+          "FF": "2619",
           "AVAIL_FF": "141120",
           "UTIL_FF": "1",
-          "LUT": "3309",
+          "LUT": "3269",
           "AVAIL_LUT": "70560",
           "UTIL_LUT": "4",
           "DSP": "0",
@@ -848,7 +848,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-11-05 15:50:02 CET",
+    "Time": "2024-11-09 14:51:15 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

@@ -61,6 +61,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/vincent/Documents/Vitis_HLS_Projects/Assignement2"/>
                                     								
                                 </option>
@@ -96,6 +98,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/vincent/Documents/Vitis_HLS_Projects/Assignement2"/>
                                     								
@@ -263,6 +267,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/vincent/Documents/Vitis_HLS_Projects/Assignement2"/>
                                     								
                                 </option>
@@ -288,6 +294,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/vincent/Documents/Vitis_HLS_Projects/Assignement2"/>
                                     								

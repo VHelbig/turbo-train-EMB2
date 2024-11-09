@@ -19,7 +19,7 @@ int main() {
 
     // Populate input arrays with random data
     for (int i = 0; i < ARRAY_LENGTH; i++) {
-        in[i] = std::rand() % 100;
+        in[i] = std::rand() % 255;
         expected_out[i] = in[i];
     }
 

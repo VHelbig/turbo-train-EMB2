@@ -32,21 +32,21 @@
 <Interval-max>3147</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<loop2>
+<loop>
 <TripCount>300</TripCount>
 <Latency>3144</Latency>
 <AbsoluteTimeLatency>31440</AbsoluteTimeLatency>
 <PipelineII>10</PipelineII>
 <PipelineDepth>155</PipelineDepth>
-</loop2>
+</loop>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>2</BRAM_18K>
-<FF>2689</FF>
-<LUT>3309</LUT>
+<FF>2619</FF>
+<LUT>3269</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

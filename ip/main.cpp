@@ -14,17 +14,17 @@ void image_processing(volatile int in[DATA_SIZE], volatile int out[DATA_SIZE]) {
 	int array_offset = 0;
 	
 
-	loop2:for(int i = 0; i<DATA_SIZE;i++){
-		#pragma HLS UNROLL factor=10
+	loop:for(int i = 0; i<DATA_SIZE;i++){
+		//#pragma HLS UNROLL factor=10
 		if(in[i] > 127){
 			out[i] = 255;
 		}else{
 			out[i] = 0;
 		}
 	}
-
+}
 	/*for(int j = 0 ; j < DATA_SIZE/BUFFER_SIZE; j++){
-		//Load data into buffer
+		//Load data into buffers
 		loop1:for(int i = 0; i < BUFFER_SIZE; i++){
 			data_segment[i] = in[i+array_offset];
 		}
@@ -46,4 +46,4 @@ void image_processing(volatile int in[DATA_SIZE], volatile int out[DATA_SIZE]) {
 		array_offset = array_offset + BUFFER_SIZE;
 	}*/
 
-}
+
