@@ -15,6 +15,7 @@ void image_processing(volatile int in[DATA_SIZE], volatile int out[DATA_SIZE]) {
 	
 
 	loop2:for(int i = 0; i<DATA_SIZE;i++){
+		#pragma HLS UNROLL factor=10
 		if(in[i] > 127){
 			out[i] = 255;
 		}else{
