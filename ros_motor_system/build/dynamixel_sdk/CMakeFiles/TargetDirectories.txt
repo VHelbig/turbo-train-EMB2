@@ -1,0 +1,10 @@
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/install/strip.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/install/local.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/install.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/list_install_components.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/rebuild_cache.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/edit_cache.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/test.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/uninstall.dir

@@ -1,0 +1,16 @@
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/lib/path2pos/pos_writer
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/ament_index/resource_index/package_run_dependencies/path2pos
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/ament_index/resource_index/parent_prefix_path/path2pos
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/environment/ament_prefix_path.sh
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/environment/ament_prefix_path.dsv
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/environment/path.sh
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/environment/path.dsv
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/local_setup.bash
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/local_setup.sh
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/local_setup.zsh
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/local_setup.dsv
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/package.dsv
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/ament_index/resource_index/packages/path2pos
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/cmake/path2posConfig.cmake
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/cmake/path2posConfig-version.cmake
+/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos/share/path2pos/package.xml

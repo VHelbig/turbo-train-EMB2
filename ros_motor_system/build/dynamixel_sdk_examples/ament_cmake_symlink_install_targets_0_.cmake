@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/read_write_node" "TARGETS" "read_write_node" "DESTINATION" "lib/dynamixel_sdk_examples")

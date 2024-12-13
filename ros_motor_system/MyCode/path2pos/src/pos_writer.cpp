@@ -31,7 +31,8 @@ class MinimalPublisher : public rclcpp::Node
       "/set_draw_number", 10, std::bind(&MinimalPublisher::set_number_callback, this,std::placeholders::_1));
       timer_ = this->create_wall_timer(50ms, std::bind(&MinimalPublisher::timer_callback, this));
 
-      draw_command_sub = this->create_subscription<std_msgs::msg::Int32>("/Can_i_draw",10,std::bind(&MinimalPublisher::can_i_draw_callback,this,std::placeholders::_1));
+      draw_command_sub = this->create_subscription<std_msgs::msg::Int32>(
+        "/Can_i_draw",10,std::bind(&MinimalPublisher::can_i_draw_callback,this,std::placeholders::_1));
     }
 
   private:
@@ -69,7 +70,7 @@ class MinimalPublisher : public rclcpp::Node
         float angle1=new_pos[1];
         float pos0=(angle0+60)*1023/300;
         float pos1=(angle1+60)*1023/300;
-        RCLCPP_INFO(this->get_logger(), "Publishing starting position %d %d", angle0,angle1);
+        RCLCPP_INFO(this->get_logger(), "Publishing starting position %d %d", (int)angle0,(int)angle1);
         
         message.id=0;
         message.position=(int)pos0;
@@ -83,6 +84,7 @@ class MinimalPublisher : public rclcpp::Node
         if (this->index>this->path.size()-1){
           this->running=false;
           this->timer_->cancel();
+          can_i_draw = false;
         }
       }
       this->thread_lock.unlock();
@@ -169,7 +171,7 @@ class MinimalPublisher : public rclcpp::Node
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<SetPosition>::SharedPtr publisher_;
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr subscription_;
-    rclcpp::Draw_command<std_msg::msg::Int32>::SharedPtr draw_command_sub;
+    rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr draw_command_sub;
 };
 
 int main(int argc, char * argv[])
