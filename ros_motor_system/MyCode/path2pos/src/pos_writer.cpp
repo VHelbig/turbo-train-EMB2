@@ -30,6 +30,8 @@ class MinimalPublisher : public rclcpp::Node
       subscription_ = this->create_subscription<std_msgs::msg::Int32>(
       "/set_draw_number", 10, std::bind(&MinimalPublisher::set_number_callback, this,std::placeholders::_1));
       timer_ = this->create_wall_timer(50ms, std::bind(&MinimalPublisher::timer_callback, this));
+
+      draw_command_sub = this->create_subscription<std_msgs::msg::Int32>("/Can_i_draw",10,std::bind(&MinimalPublisher::can_i_draw_callback,this,std::placeholders::_1));
     }
 
   private:
@@ -60,7 +62,7 @@ class MinimalPublisher : public rclcpp::Node
     void timer_callback()
     {
       this->thread_lock.lock();
-      if(this->running){
+      if(this->running and can_i_draw == true){
         std::vector<float> new_pos=this->path[index];
         auto message = SetPosition();
         float angle0=new_pos[0];
@@ -148,10 +150,18 @@ class MinimalPublisher : public rclcpp::Node
       this->thread_lock.unlock();
     }
 
+    void can_i_draw_callback(const std_msgs::msg::Int32 & msg){
+      if(msg.data==1){
+        can_i_draw = true;
+      }
+      else{
+        can_i_draw = false;}
+    }
     std::vector<std::vector<float>> path;
     size_t index;
     bool running;
     std::mutex thread_lock;
+    bool can_i_draw = false;
     
 
 
@@ -159,6 +169,7 @@ class MinimalPublisher : public rclcpp::Node
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<SetPosition>::SharedPtr publisher_;
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr subscription_;
+    rclcpp::Draw_command<std_msg::msg::Int32>::SharedPtr draw_command_sub;
 };
 
 int main(int argc, char * argv[])
