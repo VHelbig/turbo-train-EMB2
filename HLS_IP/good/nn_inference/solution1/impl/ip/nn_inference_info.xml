@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <core name="" type="" target="">
+    <kernel name="nn_inference" language="c" vlnv="xilinx.com:hls:nn_inference:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true">
+      <port name="M_AXI_AXI_DATA" mode="master" range="0xFFFFFFFF" dataWidth="1" portType="addressable" base="0x00000000"/>
+      <port name="S_AXI_CONTROL" mode="slave" range="0x1000" dataWidth="8" portType="addressable" base="0x00000000"/>
+      <arg name="input_img" addressQualifier="1" id="0" port="M_AXI_AXI_DATA" size="0x4" offset="0x10" hostOffset="0x0" hostSize="0x4" type="char*"/>
+      <arg name="output_bus" addressQualifier="1" id="1" port="M_AXI_AXI_DATA" size="0x4" offset="0x1C" hostOffset="0x0" hostSize="0x4" type="char*"/>
+      <compileWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+  </core>
+</project>

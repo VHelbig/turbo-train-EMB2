@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matmul.cpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/matmul.cpp"/>
+    <originFiles name="matmul.cpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/HLS_IP/matmul.cpp"/>
+    <originFiles name="matmul.hpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/HLS_IP/matmul.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="matmul_tb.cpp" path="/home/vincent/Embedded-System/turbo-train-EMB2/HLS_IP/matmul_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
