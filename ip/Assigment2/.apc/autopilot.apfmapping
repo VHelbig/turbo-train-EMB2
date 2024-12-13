@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="main.cpp" path="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/main.cpp"/>
-  </source>
-  <testbench>
-    <originFiles name="main_tb.cpp" path="/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ip/main_tb.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>
