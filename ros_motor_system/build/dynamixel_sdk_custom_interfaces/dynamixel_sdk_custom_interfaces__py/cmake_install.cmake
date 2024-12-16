@@ -1,8 +1,8 @@
-# Install script for directory: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
+# Install script for directory: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

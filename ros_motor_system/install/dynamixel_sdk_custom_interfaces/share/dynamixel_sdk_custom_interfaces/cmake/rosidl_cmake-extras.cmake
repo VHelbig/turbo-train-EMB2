@@ -1,1 +1,4 @@
-/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(dynamixel_sdk_custom_interfaces_IDL_FILES "msg/SetPosition.idl;srv/GetPosition.idl")
+set(dynamixel_sdk_custom_interfaces_INTERFACE_FILES "msg/SetPosition.msg;srv/GetPosition.srv;srv/GetPosition_Request.msg;srv/GetPosition_Response.msg")

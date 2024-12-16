@@ -72,7 +72,7 @@ static bool _GetPosition_Request__cdr_deserialize(
   }
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dynamixel_sdk_custom_interfaces
 size_t get_serialized_size_dynamixel_sdk_custom_interfaces__srv__GetPosition_Request(
@@ -237,7 +237,7 @@ static bool _GetPosition_Response__cdr_deserialize(
   }
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dynamixel_sdk_custom_interfaces
 size_t get_serialized_size_dynamixel_sdk_custom_interfaces__srv__GetPosition_Response(

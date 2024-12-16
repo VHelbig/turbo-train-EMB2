@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-u
 
 CXX_DEFINES = -Ddynamixel_sdk_EXPORTS
 
-CXX_INCLUDES = -I/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk/include/dynamixel_sdk 
+CXX_INCLUDES = -I/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk/include/dynamixel_sdk 
 

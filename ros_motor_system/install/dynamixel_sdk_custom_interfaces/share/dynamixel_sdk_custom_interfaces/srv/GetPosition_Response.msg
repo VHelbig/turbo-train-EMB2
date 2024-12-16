@@ -1,1 +1,3 @@
-/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_custom_interfaces/rosidl_cmake/srv/GetPosition_Response.msg
+
+# Response
+int32 position

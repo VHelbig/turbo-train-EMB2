@@ -1,1 +1,3 @@
-/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+# Messages
+uint8 id
+int32 position

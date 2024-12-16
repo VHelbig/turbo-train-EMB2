@@ -7,5 +7,6 @@
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp"
 
 #endif  // DYNAMIXEL_SDK_CUSTOM_INTERFACES__MSG__SET_POSITION_HPP_

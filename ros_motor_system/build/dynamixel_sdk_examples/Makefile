@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_examples
+CMAKE_SOURCE_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples
+CMAKE_BINARY_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

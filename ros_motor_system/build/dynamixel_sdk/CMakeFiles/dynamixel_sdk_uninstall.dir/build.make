@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk
+CMAKE_SOURCE_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk
+CMAKE_BINARY_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk
 
 # Utility rule file for dynamixel_sdk_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_moto
 include CMakeFiles/dynamixel_sdk_uninstall.dir/progress.make
 
 CMakeFiles/dynamixel_sdk_uninstall:
-	/usr/bin/cmake -P /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dynamixel_sdk_uninstall: CMakeFiles/dynamixel_sdk_uninstall
 dynamixel_sdk_uninstall: CMakeFiles/dynamixel_sdk_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/dynamixel_sdk_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_sdk_uninstall.dir/clean
 
 CMakeFiles/dynamixel_sdk_uninstall.dir/depend:
-	cd /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamixel_sdk_uninstall.dir/depend
 

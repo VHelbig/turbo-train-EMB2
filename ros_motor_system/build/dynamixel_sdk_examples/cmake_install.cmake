@@ -1,8 +1,8 @@
-# Install script for directory: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_examples
+# Install script for directory: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_examples")
+  set(CMAKE_INSTALL_PREFIX "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_examples")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,82 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples" TYPE EXECUTABLE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/read_write_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node"
+         OLD_RPATH "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib:/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk/lib:/opt/ros/foxy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dynamixel_sdk_examples/read_write_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples/environment" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples/environment" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_index/share/ament_index/resource_index/packages/dynamixel_sdk_examples")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples/cmake" TYPE FILE FILES
+    "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_core/dynamixel_sdk_examplesConfig.cmake"
+    "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/ament_cmake_core/dynamixel_sdk_examplesConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_examples" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/DynamixelSDK/dynamixel_sdk_examples/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +124,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_examples/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

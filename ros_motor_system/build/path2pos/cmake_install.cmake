@@ -1,8 +1,8 @@
-# Install script for directory: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos
+# Install script for directory: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/path2pos")
+  set(CMAKE_INSTALL_PREFIX "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/path2pos")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,82 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/path2pos" TYPE EXECUTABLE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/pos_writer")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/path2pos/pos_writer")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/path2pos")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/path2pos")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos/environment" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos/environment" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_index/share/ament_index/resource_index/packages/path2pos")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos/cmake" TYPE FILE FILES
+    "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_core/path2posConfig.cmake"
+    "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/ament_cmake_core/path2posConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path2pos" TYPE FILE FILES "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +124,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

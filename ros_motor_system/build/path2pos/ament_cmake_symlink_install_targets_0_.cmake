@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/pos_writer" "TARGETS" "pos_writer" "DESTINATION" "lib/path2pos")

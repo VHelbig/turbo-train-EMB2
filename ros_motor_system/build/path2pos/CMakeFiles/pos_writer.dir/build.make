@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos
+CMAKE_SOURCE_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos
+CMAKE_BINARY_DIR = /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pos_writer.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/pos_writer.dir/progress.make
 include CMakeFiles/pos_writer.dir/flags.make
 
 CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o: CMakeFiles/pos_writer.dir/flags.make
-CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o -c /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp
+CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o -c /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp
 
 CMakeFiles/pos_writer.dir/src/pos_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pos_writer.dir/src/pos_writer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp > CMakeFiles/pos_writer.dir/src/pos_writer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp > CMakeFiles/pos_writer.dir/src/pos_writer.cpp.i
 
 CMakeFiles/pos_writer.dir/src/pos_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pos_writer.dir/src/pos_writer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp -o CMakeFiles/pos_writer.dir/src/pos_writer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos/src/pos_writer.cpp -o CMakeFiles/pos_writer.dir/src/pos_writer.cpp.s
 
 # Object files for target pos_writer
 pos_writer_OBJECTS = \
@@ -79,61 +79,60 @@ pos_writer_EXTERNAL_OBJECTS =
 
 pos_writer: CMakeFiles/pos_writer.dir/src/pos_writer.cpp.o
 pos_writer: CMakeFiles/pos_writer.dir/build.make
-pos_writer: /opt/ros/galactic/lib/librclcpp.so
-pos_writer: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
-pos_writer: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
-pos_writer: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
-pos_writer: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/libament_index_cpp.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/libstd_msgs__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/libstd_msgs__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/librcl.so
-pos_writer: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/librcl_interfaces__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/librmw_implementation.so
-pos_writer: /opt/ros/galactic/lib/librcl_logging_spdlog.so
-pos_writer: /opt/ros/galactic/lib/librcl_logging_interface.so
-pos_writer: /opt/ros/galactic/lib/librcl_yaml_param_parser.so
-pos_writer: /opt/ros/galactic/lib/librmw.so
-pos_writer: /opt/ros/galactic/lib/libyaml.so
-pos_writer: /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/librosgraph_msgs__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/libstatistics_msgs__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/libtracetools.so
-pos_writer: /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_generator_c.so
-pos_writer: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/librosidl_typesupport_introspection_cpp.so
-pos_writer: /opt/ros/galactic/lib/librosidl_typesupport_introspection_c.so
-pos_writer: /opt/ros/galactic/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/librosidl_typesupport_cpp.so
-pos_writer: /opt/ros/galactic/lib/librosidl_typesupport_c.so
-pos_writer: /opt/ros/galactic/lib/librcpputils.so
-pos_writer: /opt/ros/galactic/lib/librosidl_runtime_c.so
-pos_writer: /opt/ros/galactic/lib/librcutils.so
+pos_writer: /opt/ros/foxy/lib/librclcpp.so
+pos_writer: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+pos_writer: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+pos_writer: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+pos_writer: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/librcl.so
+pos_writer: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/librmw_implementation.so
+pos_writer: /opt/ros/foxy/lib/librmw.so
+pos_writer: /opt/ros/foxy/lib/librcl_logging_spdlog.so
+pos_writer: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.5.0
+pos_writer: /opt/ros/foxy/lib/librcl_yaml_param_parser.so
+pos_writer: /opt/ros/foxy/lib/libyaml.so
+pos_writer: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/libtracetools.so
+pos_writer: /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+pos_writer: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so
+pos_writer: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
+pos_writer: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
+pos_writer: /opt/ros/foxy/lib/librosidl_typesupport_c.so
+pos_writer: /opt/ros/foxy/lib/librcpputils.so
+pos_writer: /opt/ros/foxy/lib/librosidl_runtime_c.so
+pos_writer: /opt/ros/foxy/lib/librcutils.so
 pos_writer: CMakeFiles/pos_writer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pos_writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pos_writer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pos_writer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +145,6 @@ CMakeFiles/pos_writer.dir/clean:
 .PHONY : CMakeFiles/pos_writer.dir/clean
 
 CMakeFiles/pos_writer.dir/depend:
-	cd /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/MyCode/path2pos /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos /home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles/pos_writer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/MyCode/path2pos /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos /home/vincent/Embedded-System/turbo-train-EMB2/ros_motor_system/build/path2pos/CMakeFiles/pos_writer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pos_writer.dir/depend
 

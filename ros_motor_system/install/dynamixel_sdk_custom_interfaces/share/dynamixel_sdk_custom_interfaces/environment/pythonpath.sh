@@ -1,1 +1,3 @@
-/home/magnus/workspace/Assignment_2/turbo-train-EMB2/ros_motor_system/build/dynamixel_sdk_custom_interfaces/ament_cmake_environment_hooks/pythonpath.sh
+# generated from ament_package/template/environment_hook/pythonpath.sh.in
+
+ament_prepend_unique_value PYTHONPATH "$AMENT_CURRENT_PREFIX/lib/python3.8/site-packages"
